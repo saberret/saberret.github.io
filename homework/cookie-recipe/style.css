@@ -1,0 +1,44 @@
+body {
+	background: #c8deec;
+	padding-bottom: 40px;
+}
+
+h3 {
+	color: #887;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-style: italic;
+}
+
+h1 {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+}
+
+h2 {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	color: steelblue;
+}
+
+p {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+}
+
+li {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+}
+
+a {
+	font-family: "Helvetica Neue"; 
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	border: 4px solid black;
+	width: 30%;
+}
+
