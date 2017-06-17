@@ -1,3 +1,63 @@
 body {
-    background: red;
+    background-image: url("pic_heads.png");
+    background-size: cover;  
 }
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 300px;
+	position: relative;
+	margin: 40px 270px;
+}
+h3 {
+	color: #3d8a72;
+	font-family: 'century gothic', sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	text-align: left-justify;
+	line-height: 45px;
+	margin-top: -300px;
+	margin-right: 150px;
+	float: right;
+}
+h1 {
+	color:#4dbc99;
+	font-size: 48px;
+	font-family: "arial black", sans-serif;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0;
+	background-color: #2b6d58;
+	opacity: 0.9;
+	padding: 40px;
+}
+ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 50px 20px;  
+}	
+li {
+	font-family: 'century gothic', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;	
+	display: inline;
+	padding: 50px 20px;
+	
+}
+a {
+	font-size: 20px;
+	color: #91cab8;
+	text-decoration: none;
+	border: 2px solid #2b6d58;
+    border-radius: 100px;
+	padding: 20px;
+	background-color: #2b6d58;
+}
+footer {
+    position:absolute;
+    bottom:0px;
+}
+
+
