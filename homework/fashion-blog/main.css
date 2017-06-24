@@ -1,0 +1,55 @@
+.container {
+	width: 700px;
+	margin: 40px;
+}
+img {
+	width: 700px;
+}
+h1, h3, h2, .date, nav, article, h4 {
+	font-family: 'trebuchet', 'calibri', sans-serif;
+	font-weight: lighter;
+}
+h1, a {
+	color: crimson;
+	padding-top: 10px;
+}
+h1 {
+	font-size: 40px;
+	line-height: 20px;
+}
+h2 {
+	font-size: 30px;
+	line-height: 18px;
+}
+p {
+	font-size: 12px;
+	color: grey;
+	line-height: 20px;
+}
+.top-links a, .date, h4 {	
+	color: lightgrey;
+	font-style: normal;
+}
+.top-links a {
+	font-size: 18px;
+	padding-right: 15px;
+
+}
+.cont a {
+	font-weight: bold;
+	float: right;
+	text-decoration: none;
+}
+.bottom-links a {
+	text-decoration: none;
+}
+article {
+	border-bottom: 1px solid lightgrey;
+	padding: 40px 0 60px 0;
+}
+footer {
+	color: lightgrey;
+	padding-top: 40px;
+	font-size: 14px;
+}
+
