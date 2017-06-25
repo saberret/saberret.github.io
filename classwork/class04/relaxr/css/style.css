@@ -1,7 +1,7 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Yin
 Developer @GA in NYC
 */
 
@@ -46,12 +46,14 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
+    
+     
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-      background-size: cover;
+     background-size: cover;
+     background-color: #033048;
+
 }
 
 
@@ -62,18 +64,127 @@ body {
 /* Center the container */
 #container {
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   height: 500px;
-
+}
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  text-align: left;
+  padding: 60px;
+}    
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.getnow button {
+  font-size: 14px;
+  font-weight: 800;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #f9e42e;
+  padding: 10px 40px;
+  display: block;
+  margin: 70px auto;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #033048;
+  padding-bottom: 10px;
+}
+li {
+  color: #033048;
+  line-height: 24px;
+  max-width: 250px;
+  list-style-type: disc; 
+}
+p, ul {
+  font-size: 13px;
+  font-weight: 300;
+}
+#articles {
+  color: #033048;
+}
+.benefits, ul {
+  background-color: #f0efef;
+  padding: 40px 60px;
+  height: 340px;
+  text-align: left;
+}
+.testimonial {
+  background-image: url(../images/testimonial_bg.jpg);
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+}
+.quote {
+  font-size: 18px;
+  font-weight: 300 italic;
+  max-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 26px;
+  padding-top: 40px;
+}
+.author {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0 40px 0;
+}
+.signup button {
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 5px;
+  background-color: #033048; 
+  color: white;
+  padding: 10px 40px;
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+}
+.signup {
+  background-color: #f9e42e;
+  height: 80px;
+  padding: 23px;
+}
+.relaxr {
+  text-align: center;
+  padding: 20px;
+}
+.relaxr a {
+  font-size: 24px;
+  font-weight: 800;
+  color: #f9e42e;
+  text-decoration: none;
+}
+section {
+  text-align: center;
+  background-color: #121212;
+}
+.fb, .twitter {
+  display: inline;
+  padding: 20px;
+}
+nav img {
+  max-height: 25px; 
+}
+footer{
+  font-size: 9px;
+  font-weight: 600;
+  color: #606161;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #121212;
 }
 
-header {
 
-}
-
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
