@@ -1,0 +1,36 @@
+body {
+	margin: 0 auto;
+	width: 600px;
+}
+section {
+	text-align: center;
+	font-family: sans-serif;
+	border: 2px solid grey;
+	margin: 70px;
+}
+.option {
+	font-size: 24px;
+	padding: 40px 30px;
+}
+.scale {
+	text-align: left;
+	padding: 5px;
+	padding-left: 160px;
+	color: lightgrey;
+}
+button {
+	font-size: 14px;
+	color: white;
+	background-color: black;
+	border: none;
+}
+input {
+	font-size: 14px;
+	width: 60px;
+}
+.conversion {
+	padding: 40px;
+}
+#fc-conversion, #cf-conversion {
+	color: blue;
+}
