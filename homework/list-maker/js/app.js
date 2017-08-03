@@ -37,18 +37,20 @@ $(document).ready(function () {
 	
 	function appendItem (item) {
 		$('#list').append('<li>' + item + '</li>');
-	
-	// console.log(appendItem);
+
+		$('li').click(function () {
+			$(this).remove();
+		})
 	}	
 	
-
-	$('#list').on('click', 'li', function () {
-		$(this).remove();
+	// or this way, as below
+	// $('ul').on('click', 'li', function () {
+	// 	$(this).remove();
 	
-	// console.log(this);
-	})
+	
+	});
 
-});
+
 
 
 
