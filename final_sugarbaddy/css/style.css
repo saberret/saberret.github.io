@@ -1,0 +1,144 @@
+.main {
+  /*max-width: 1200px;*/
+  background-image: url(../images/pattern-speckles.png);
+  background-repeat: repeat;
+
+  position: relative;
+  width: 100%;
+}
+
+
+.top-section {  
+  background-image: url(../images/pattern-speckles.png);
+  background-repeat: repeat;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.blurb {
+  font-family: CatCafe; 
+  font-size: 1.2em;
+  color: #43a08c;
+  text-align: center;
+  width: 100%;
+  padding: 180px 20px 10px 20px;
+  line-height: 1.4em;
+}
+
+.half-circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pic-plain-circle {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  z-index: 0;
+  transform: rotate(-293deg);
+}
+
+.logo-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+}
+
+.logo {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  opacity: .95;
+}
+
+.nav-cates {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  height: 800px;
+}
+
+.cate {
+  position: absolute;
+  width: 20%;
+}
+
+.cate-course {
+  left: 10%;
+  top: 20%;
+  width: 22%;
+}
+
+.cate-low-carb {
+  left: 34%;
+  top: 13%;
+}
+
+.cate-quick-easy {
+  left: 53%;
+  top: 26%;
+  z-index: 5;
+  width: 28%;
+}
+
+.cate-budget-friendly {
+  left: 68%;
+  top: 9%;
+  z-index: 10;
+  width: 21%;
+}
+
+.cate-question {
+  left: 83%;
+  top: 46%;
+  width: 12%;
+  z-index: 0;
+}
+
+.cate-img {
+  width: 100%;
+  position: block;
+}
+
+.cate-question-img {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.cate-question-text {
+  position: relative;
+  left: 18%;
+  bottom: 0;
+  top: 23px;
+  right: 0;
+  z-index: 5;
+  width: 90px;
+}
+
+.cate-course-main {
+  background-image: url(../images/pattern-speckles-peach.png);
+  background-repeat: repeat;
+  position: relative;
+  width: 100%;
+}
+
+
+/*.browse {
+  font-family: CatCafe;
+  font-size: 2em;
+  text-align: center;
+  color: #96cec1;
+  line-height: 2em;
+  background-image: url(../images/pattern-speckles.png);
+  background-repeat: repeat;
+}*/
+
+
+/*make nav stay top locked and when cate is clicked, 
+site auto scrolls down to show recipes/more cates. 
+single page site*/
