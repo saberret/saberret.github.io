@@ -4,7 +4,7 @@
   background-repeat: repeat;
   position: relative;
   width: 100%;
-  height: 750px;
+  height: 850px;
 }
 
 
@@ -374,8 +374,16 @@
   text-decoration: none;
 }
 
+.recipe {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 
-
+.drink-recipe-main {
+  background-color: #fefbe3;
+}
 
 
 
