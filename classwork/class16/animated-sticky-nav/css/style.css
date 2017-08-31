@@ -12,12 +12,14 @@ header {
 	height: 75px;
 	color: white;
 	padding-left: 20px;
+	/*visibility: hidden;*/
 	transition: all .2s ease-in;
 }
 
 header.small-header {
 	height: 25px;
 	background: lightgreen;
+	/*visibility: visible;*/
 }
 
 header h1 {

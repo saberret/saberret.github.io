@@ -5,8 +5,8 @@
   position: relative;
   width: 100%;
   height: 850px;
+  z-index: 20;
 }
-
 
 .top-section {  
   background-image: url(../images/pattern-speckles.png);
@@ -62,7 +62,7 @@
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
-  height: 800px;
+  height: 700px;
 }
 
 .cate {
@@ -71,18 +71,20 @@
 }
 
 .cate-course {
-  left: 10%;
+  left: 8%;
   top: 11%;
   width: 22%;
+  z-index: 5;
 }
 
 .cate-low-carb {
-  left: 34%;
+  left: 32%;
   top: 4%;
+  z-index: 5;
 }
 
 .cate-quick-easy {
-  left: 53%;
+  left: 51%;
   top: 17%;
   z-index: 5;
   width: 28%;
@@ -96,10 +98,10 @@
 }
 
 .cate-question {
-  left: 83%;
+  left: 81%;
   top: 37%;
   width: 12%;
-  z-index: 0;
+  z-index: 10;
 }
 
 .cate-img {
@@ -109,7 +111,7 @@
 
 .cate-question-img {
   width: 100%;
-  z-index: 0;
+  z-index: 10;
   position: relative;
 }
 
@@ -128,7 +130,7 @@
   align-items: center;
   flex-shrink: 0;
   flex-grow: 0;
-  z-index: 5;
+  z-index: 15;
 }
 
 .cate-question-text {
@@ -139,68 +141,57 @@
 /*PAGE TWO*/
 
 .site-nav {
-  border: 1px solid red;
-  visibility: hidden;
-  position: absolute;
+  /*border: 1px solid red;*/
+  position: fixed;
   top: 0;
   left: 0;
-  width: 1%;
+  right: 0;
+  /*width: 90%;*/
   bottom: 0;
-/*  height: 55px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: flex-start;*/
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /*align-content: center;*/
+  align-items: flex-end;
+  /*visibility: hidden;*/
   transition: all .2s ease-in;
 }
 
-.site-nav-fixed {
-  /*border: 1px solid red;*/
-  /*visibility: hidden;*/
-  position: absolute;
-  top: -39px;
-  left: 0;
+.site-nav.fixed {
   width: 100%;
-  bottom: 0;
-  height: 45px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: flex-start;
+/*  border: 1px solid red;*/
+  bottom: 50%;
+  flex-grow: 1;
 }
 
-.site-nav-fixed div {
-  margin-left: -66px;
+.sticky-home, .sticky-meal-course, .sticky-low-carb, .sticky-quick-easy, .sticky-budget-friendly {
+  width: 2%;
+  transition: all .2s ease-in;
+}
+
+.sticky-home.fixed, .sticky-meal-course.fixed, .sticky-low-carb.fixed, .sticky-quick-easy.fixed, .sticky-budget-friendly.fixed {
+  width: 5%;
+  margin-right: 20px;
 }
 
 .sticky-pics {
-  /*border: 1px solid red;*/
-  display: block;
-  width: 45%;
+/*  display: block;*/
+  width: 50%;
+  transition: all .2s ease-in;
 }
 
-.sticky-page-meal-course {
-  margin-top: -12px;
-  margin-right: 320px;
-  width: 130px;
+.sticky-pics.fixed {
+/*  display: block;*/
+  width: 100%;
 }
 
-.sticky-home-light {
-  margin-left: -525px;
-  width: 75px;
-}
 
-/*.sticky-meal-course, .sticky-low-carb, .sticky-quick-easy, .sticky-budget-friendly {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+
+
+/*.sticky-pic-mini {
+  width: 25%;
 }*/
-
-
 
 
 
@@ -212,50 +203,73 @@
   position: relative;
   width: 100%;
   height: 850px;
-  padding-top: 40px;
+  padding-top: 60px;
+  z-index: 5;
 }
 
 .nav-cate-course {
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
-  height: 850px;
+  height: 800px;
+}
+
+.meal-course-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -22%;
+}
+
+.cate-headers {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  z-index: 0;
+  transform: rotate(-293deg);
+}
+
+.cate-header-titles {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 67%;
+  bottom: 0;
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+  z-index: 10; 
 }
 
 .group {
   position: absolute;
-  width: 18%;
-  z-index: 0;
+  width: 15%;
+
 }
 
 .group-1 {
-  left: 5%;
+  left: 8%;
   top: 10%;
-  z-index: 0;
 }
 
 .group-2 {
-  left: 29%;
+  left: 30%;
   top: 26%;
-  z-index: 0;
 }
 
 .group-3 {
-  left: 53%;
+  left: 52%;
   top: 10%;
-  z-index: 0;
 }
 
 .group-4 {
-  left: 78%;
+  left: 74%;
   top: 26%;
-  z-index: 0;
 }
 
 .course-img {
   width: 100%;
   position: block;
-  z-index: 0;
 }
 
 .cate-wrap {
@@ -285,11 +299,11 @@
   flex-grow: 0;
 }
 
-.pic-breakfast-text {
+.breakfast-link, .pic-breakfast-text {
   width: 55%;
 }
 
-.pic-apps-sides-text {
+.apps-sides-link, .pic-apps-sides-text {
   width: 45%;
 }
 
@@ -324,7 +338,7 @@
   background-repeat: repeat;
   position: relative;
   width: 100%;
-  height: 1100px;
+  height: 1200px;
 }
 
 .drinks-nav {
@@ -333,7 +347,39 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  height: 1100px;
+  padding-top: 40px;
+  /*z-index: 1;*/
+}
+
+.drinks-page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -500%;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.drinks-nav-circle {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  z-index: 1;
+  transform: rotate(-293deg);
+}
+
+.cate-drinks-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 0;
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  z-index: 500; 
 }
 
 .drinks-row {
@@ -346,7 +392,11 @@
   position: relative;
   /*border: 1px solid red;*/
   width: 100%;
-  top: 40px;
+/*  z-index: 10;*/
+}
+
+.drinks-row-1 {
+  padding-top: 40px;
 }
 
 .drinks-recipe {
@@ -355,11 +405,13 @@
   flex-grow: 1;
   flex-shrink: 1;
   padding: 30px;
+  z-index: 100;
 }
 
 .pic-drink {
   display: block;
   width: 100%;
+  z-index: 100;
 }
 
 .drink-title {
@@ -368,25 +420,12 @@
   font-size: 2em;
   text-align: center;
   line-height: 2em;
+  z-index: 100;
 }
 
 .drink-recipe-link {
   text-decoration: none;
-}
-
-.recipe {
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-
-.drink-recipe-main {
-  background-color: #fefbe3;
+  z-index: 100;
 }
 
 
-
-/*make nav stay top locked and when cate is clicked, 
-site auto scrolls down to show recipes/more cates. 
-single page site*/
