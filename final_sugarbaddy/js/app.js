@@ -4,7 +4,7 @@ $(document).ready(function () {
 		// console.log('scrolling');
 		console.log($(window).scrollTop());
 	
-		if ($(window).scrollTop() > 852) {
+		if ($(this).scrollTop() > 852) {
 			$('site-nav').addClass('fixed');
 			$('sticky-pics').addClass('fixed');
 			$('sticky-home').addClass('fixed');
