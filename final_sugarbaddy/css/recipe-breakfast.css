@@ -1,16 +1,16 @@
-.drink-recipe-main {
+.breakfast-recipe-main {
   background-image: url(../images/pattern-speckles-dark.png);
   background-repeat: repeat;
   position: relative;
   width: 100%;
-  height: 1800px;
+  height: ;
 }
 
 .recipe-page-header {
   position: absolute;
   left: 0;
   right: 0;
-  top: -10.5%;
+  top: -0.5%;
   bottom: 0;
   display: block;
   margin: 0 auto;
@@ -19,10 +19,9 @@
 
 .recipe-nav-circle {
   display: block;
-  width: 300px;
+  width: 310px;
   margin: 0 auto;
   z-index: 1;
-  transform: rotate(-293deg);
 }
 
 .cate-recipe-title {
@@ -47,10 +46,10 @@
 }
 
 
-.drink-recipe-title {
+.breakfast-recipe-title {
   font-family: coquerli-regular;
   color: #eb9c81;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding-bottom: 20px;
@@ -59,7 +58,7 @@
 .prep-time {
   font-family: Catcafe;
   color: #89f7de;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   line-height: 1.8em;
   padding-bottom: 40px;
   padding-top: 20px;
@@ -82,7 +81,7 @@
 .step-label {
   font-family: coquerli-regular;
   color: #eb9c81;
-  font-size: 2.2em;
+  font-size: 2.2rem;
   padding-bottom: 20px;
   padding-top: 20px;
   letter-spacing: 0.05em;
@@ -91,7 +90,7 @@
 .list {
   font-family: Catcafe;
   color: #fefbe3;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   line-height: 2em;
   letter-spacing: 0.05em;
 }
@@ -103,15 +102,16 @@
 .equivalence {
   font-family: Catcafe;
   color: #89f7de;
-  font-size: 0.6em;
+  font-size: 0.6rem;
   letter-spacing: 0.05em;
   padding-left: 20px;
 }
 
 .list-ingredients {
   max-width: 400px;
-
 }
 
-
+.list-nutrition {
+  padding-bottom: 10%;
+}
 
