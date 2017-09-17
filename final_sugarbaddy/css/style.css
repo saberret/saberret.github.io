@@ -516,11 +516,12 @@ body {
 
 
 
-/*apps-sides / dinner / drink page*/
+/*apps-sides / dinner / drink / salad page*/
 
 .drinks-main,
 .dinner-main,
-.apps-sides-main {
+.apps-sides-main,
+.salad-main {
   background-image: url(../images/pattern-speckles-light.png);
   background-repeat: repeat;
   position: relative;
@@ -542,6 +543,11 @@ body {
   z-index: 498;
 }
 
+.salad-main {
+  height: 1500px;
+  z-index: 492;
+}
+
 .dinner-nav,
 .apps-sides-nav {
   background-image: url(../images/pattern-speckles-light.png);
@@ -553,7 +559,8 @@ body {
   /*z-index: 1;*/
 }
 
-.drinks-nav {
+.drinks-nav,
+.salad-nav {
   background-image: url(../images/pattern-speckles-light.png);
   background-repeat: repeat;
   max-width: 1200px;
@@ -597,8 +604,20 @@ body {
   z-index: 1;
 }
 
+.salad-page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -234%;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;  
+}
+
 .drinks-nav-circle,
-.dinner-nav-circle {
+.dinner-nav-circle,
+.salad-nav-circle {
   display: block;
   width: 300px;
   margin: 0 auto;
@@ -650,9 +669,22 @@ body {
   z-index: 500; 
 }
 
+.cate-salad-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 37%;
+  bottom: 0;
+  display: block;
+  width: 162px;
+  margin: 0 auto;
+  z-index: 500;  
+}
+
 .drinks-row,
 .dinner-row,
-.apps-sides-row {
+.apps-sides-row,
+.salad-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -666,7 +698,7 @@ body {
 }
 
 .drinks-row-1,
-.dinner-row-1,{
+.dinner-row-1 {
   padding-top: 60px;
 }
 
@@ -676,7 +708,8 @@ body {
 
 .drinks-recipe,
 .dinner-recipe,
-.apps-sides-recipe {
+.apps-sides-recipe,
+.salad-recipe {
   /*border: 1px solid blue;*/
   width: 300px;
   flex-grow: 1;
@@ -687,7 +720,8 @@ body {
 
 .pic-drink,
 .pic-dinner,
-.pic-apps-sides {
+.pic-apps-sides,
+.pic-salad {
   display: block;
   width: 100%;
   z-index: 100;
@@ -695,7 +729,8 @@ body {
 
 .drink-title,
 .dinner-title,
-.apps-sides-title {
+.apps-sides-title,
+.salad-title {
   font-family: coquerli-regular;
   color: #eb9c81;
   font-size: 2rem;
@@ -708,14 +743,16 @@ body {
 
 .drink-recipe-link,
 .dinner-recipe-link,
-.apps-sides-recipe-link {
+.apps-sides-recipe-link,
+.salad-recipe-link {
   text-decoration: none;
   z-index: 100;
 }
 
 .drinks-recipe:hover,
 .dinner-recipe:hover,
-.apps-sides-recipe:hover {
+.apps-sides-recipe:hover,
+.salad-recipe:hover {
   /*border: 3px solid #9f7180; */
   padding: 0 20px 40px 20px;
   background-color: #fefbe3;
