@@ -341,10 +341,12 @@ body {
 
 
 
-/*breakfast / lunch page*/
+/*breakfast / lunch / dessert / snacks page*/
 
 .lunch-main,
-.breakfasts-main {
+.breakfasts-main,
+.dessert-main,
+.snacks-main {
   background-image: url(../images/pattern-speckles-warm.png);
   background-repeat: repeat;
   position: relative;
@@ -362,8 +364,20 @@ body {
   z-index: 499;
 }
 
+.dessert-main {
+  height: 1740px;
+  z-index: 495;
+}
+
+.snacks-main {
+  height: 1640px;
+  z-index: 493;
+}
+
 .lunch-nav,
-.breakfasts-nav {
+.breakfasts-nav,
+.dessert-nav,
+.snacks-nav {
   background-image: url(../images/pattern-speckles-warm.png);
   background-repeat: repeat;
   max-width: 1200px;
@@ -374,7 +388,9 @@ body {
 }
 
 .lunch-page-header,
-.breakfasts-page-header {
+.breakfasts-page-header,
+.dessert-page-header,
+.snacks-page-header {
   position: absolute;
   left: 0;
   right: 0;
@@ -386,7 +402,9 @@ body {
 }
 
 .lunch-nav-circle,
-.breakfasts-nav-circle {
+.breakfasts-nav-circle,
+.dessert-nav-circle,
+.snacks-nav-circle {
   display: block;
   width: 300px;
   margin: 0 auto;
@@ -395,7 +413,9 @@ body {
 }
 
 .cate-lunch-title,
-.cate-breakfasts-title {
+.cate-breakfasts-title,
+.cate-dessert-title,
+.cate-snacks-title {
   position: absolute;
   left: 0;
   right: 0;
@@ -414,8 +434,15 @@ body {
   width: 186px;  
 }
 
+.cate-dessert-title,
+.cate-snacks-title {
+  width: 156px;
+}
+
 .lunch-row, 
-.breakfasts-row {
+.breakfasts-row,
+.dessert-row,
+.snacks-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -429,12 +456,16 @@ body {
 }
 
 .lunch-row-1,
-.breakfasts-row-1 {
+.breakfasts-row-1,
+.dessert-row-1,
+.snacks-row-1 {
   padding-top: 40px;
 }
 
 .lunch-recipe,
-.breakfasts-recipe {
+.breakfasts-recipe, 
+.dessert-recipe,
+.snacks-recipe {
   /*border: 1px solid blue;*/
   width: 300px;
   flex-grow: 1;
@@ -444,14 +475,18 @@ body {
 }
 
 .pic-lunch,
-.pic-breakfast {
+.pic-breakfast,
+.pic-dessert,
+.pic-snacks {
   display: block;
   width: 100%;
   z-index: 100;
 }
 
 .lunch-title,
-.breakfast-title {
+.breakfast-title,
+.dessert-title,
+.snacks-title {
   font-family: coquerli-regular;
   color: #b37e8f;
   font-size: 2rem;
@@ -463,13 +498,17 @@ body {
 }
 
 .lunch-recipe-link,
-.breakfast-recipe-link {
+.breakfast-recipe-link ,
+.dessert-recipe-link,
+.snacks-recipe-link {
   text-decoration: none;
   z-index: 100;
 }
 
 .lunch-recipe:hover,
-.breakfasts-recipe:hover {
+.breakfasts-recipe:hover,
+.dessert-recipe:hover,
+.snacks-recipe:hover {
   /*border: 3px solid #9f7180; */
   padding: 0 20px 40px 20px;
   background-color: #fde174;
@@ -489,12 +528,12 @@ body {
 }
 
 .drinks-main {
-  height: 1280px;
-  z-index: 290;
+  height: 1300px;
+  z-index: 494;
 }
 
 .dinner-main {
-  height: 1280px;
+  height: 1580px;
   z-index: 496;
 }
 
@@ -503,7 +542,6 @@ body {
   z-index: 498;
 }
 
-.drinks-nav,
 .dinner-nav,
 .apps-sides-nav {
   background-image: url(../images/pattern-speckles-light.png);
@@ -515,7 +553,16 @@ body {
   /*z-index: 1;*/
 }
 
-.drinks-page-header,
+.drinks-nav {
+  background-image: url(../images/pattern-speckles-light.png);
+  background-repeat: repeat;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 80px;
+  /*z-index: 1;*/
+}
+
 .dinner-page-header {
   position: absolute;
   left: 0;
@@ -525,6 +572,18 @@ body {
   display: block;
   margin: 0 auto;
   z-index: 1;
+}
+
+
+.drinks-page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -234%;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;  
 }
 
 .apps-sides-page-header {
@@ -555,7 +614,6 @@ body {
   transform: rotate(-293deg);
 }
 
-.cate-drinks-title,
 .cate-dinner-title {
   position: absolute;
   left: 0;
@@ -566,6 +624,18 @@ body {
   width: 150px;
   margin: 0 auto;
   z-index: 500; 
+}
+
+.cate-drinks-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 37%;
+  bottom: 0;
+  display: block;
+  width: 162px;
+  margin: 0 auto;
+  z-index: 500;  
 }
 
 .cate-apps-sides-title {
@@ -597,7 +667,7 @@ body {
 
 .drinks-row-1,
 .dinner-row-1,{
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .apps-sides-row-1 {
