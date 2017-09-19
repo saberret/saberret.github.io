@@ -871,9 +871,6 @@ body {
 
 
 
-
-
-
 /*quick easy page*/
 
 .quick-easy-main {
@@ -981,6 +978,117 @@ body {
   /*border: 3px solid #9f7180; */
   padding: 0 20px 40px 20px;
   background-color: #fde174;
+}
+
+
+
+/*budget friendly page*/
+
+.budget-friendly-main {
+  background-image: url(../images/pattern-speckles-plum.png);
+  background-repeat: repeat;
+  position: relative;
+  width: 100%;
+}
+
+.budget-friendly-main {
+  height: 1600px;
+  z-index: 489;
+}
+
+.budget-friendly-nav {
+  background-image: url(../images/pattern-speckles-plum.png);
+  background-repeat: repeat;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+  /*z-index: 1;*/
+}
+
+.budget-friendly-page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -500%;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.budget-friendly-nav-circle {
+  display: block;
+  width: 318px;
+  margin: 0 auto;
+  z-index: 1;
+  transform: rotate(-293deg);
+}
+
+.cate-budget-friendly-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 0;
+  display: block;
+  width: 144px;
+  margin: 0 auto;
+  z-index: 500; 
+}
+
+.budget-friendly-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+  position: relative;
+  /*border: 1px solid red;*/
+  width: 100%;
+/*  z-index: 10;*/
+}
+
+.budget-friendly-row-1 {
+  padding-top: 60px;
+}
+
+.budget-friendly-recipe {
+  /*border: 1px solid blue;*/
+  width: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 30px;
+  z-index: 100;
+}
+
+.pic-budget-friendly {
+  display: block;
+  width: 100%;
+  z-index: 100;
+}
+
+.budget-friendly-title {
+  font-family: coquerli-regular;
+  color: #fef3c6;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2em;
+  z-index: 100;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.budget-friendly-recipe-link {
+  text-decoration: none;
+  z-index: 100;
+}
+
+.budget-friendly-recipe:hover {
+  /*border: 3px solid #9f7180; */
+  padding: 0 20px 40px 20px;
+  background-color: #8d657b;
 }
 
 
