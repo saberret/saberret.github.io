@@ -1,3 +1,6 @@
+@media (max-width: 320px) {
+
+
 body {
   background-image: url(../images/pattern-speckles.png);
   background-repeat: repeat;
@@ -11,7 +14,7 @@ body {
   background-repeat: repeat;
   position: relative;
   width: 100%;
-/*  height: 850px;*/
+  height: 850px;
   z-index: 2000;
 }
 
@@ -20,7 +23,7 @@ body {
   background-repeat: repeat;
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 
 .blurb {
@@ -45,7 +48,7 @@ body {
 
 .pic-plain-circle {
   display: block;
-  width: 400px;
+  width: 290px;
   margin: 0 auto;
   z-index: 0;
   transform: rotate(-293deg);
@@ -549,8 +552,7 @@ body {
 }
 
 .dinner-nav,
-.apps-sides-nav,
-.drinks-nav {
+.apps-sides-nav {
   background-image: url(../images/pattern-speckles-light.png);
   background-repeat: repeat;
   max-width: 1200px;
@@ -560,6 +562,7 @@ body {
   /*z-index: 1;*/
 }
 
+.drinks-nav,
 .salad-nav {
   background-image: url(../images/pattern-speckles-light.png);
   background-repeat: repeat;
@@ -586,7 +589,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: -480%;
+  top: -234%;
   bottom: 0;
   display: block;
   margin: 0 auto;
@@ -649,7 +652,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: 58%;
+  top: 37%;
   bottom: 0;
   display: block;
   width: 162px;
@@ -1291,54 +1294,28 @@ body {
 
 
 
+/*media queries*/
 
 
 
-@media only screen and (max-width: 400px) {
-    html {
-      width: 100%;
-      margin: 0 auto;
-    }
-/*    body {
-      width: 330px;
-    }*/
-/*    main {
-      height: 110%;
-    }*/
-/*    .top-section {
-      width: 100%;
+
+@media only screen and (max-width: 320px) {
+    .top-section {
+      width: 80%;
       position: relative;
       margin: 0 auto;
-    }*/
+    }
     .half-circle {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 25%;
+      bottom: 50px;
     }
     .pic-plain-circle {
-      width: 75%;
+      width: 100%;
     }
     .logo {
-      width: 50%;       
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
-    .blurb {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: 90%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 0 15%;
-    }
-    .nav-cates {
-      height: 100%;
+      width: 60%; 
     }
     .cate {
       width: 50%;
@@ -1346,212 +1323,14 @@ body {
       margin: 0 auto;
       padding-bottom: 5%;
     }
-    .cate-course {
-      padding-top: 25%;
-    }
-    .cate-question-img {
-      position: relative;
-      padding-bottom: 30px;
-    }
-    .question-text {
-      position: absolute;
-      left: 25%;
-      top: 75%;
-      bottom: 0;
-      width: 50%;
-    }
-    /*meal course*/
-    .cate-course-main {
-      padding-bottom: 1050px;
-    }
-    .cate-headers {
-      width: 75%;
-    }
-    .meal-course-nav {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -10%;
-     } 
-    .cate-wrap--top {
-      margin-bottom: 15px;
-    }
-    .group {
-      width: 50%;
-      position: static;
-      display: flex;
-      flex-wrap: nowrap;
-      flex-flow: column;
-      margin: 0 auto;
-    }
-    .group-1 {
-      padding-top: 70px;
-    }
-    .cate-course-main,
-    .breakfasts-main,
-    .apps-sides-main,
-    .dessert-main,
-    .snacks-main,
-    .low-carb-main,
-    .budget-friendly-main {
-      height: 100%;
-    }
-    .lunch-page-header, 
-    .breakfasts-page-header,  
-    .apps-sides-page-header,
-    .dinner-page-header,
-    .quick-easy-page-header {
-      top: -470%;
-    }
-    .dessert-page-header {
-      top: 4680%;
-    }
-    .drinks-page-header {
-      top: -365%;
-    }
-    .snacks-page-header {
-      top: 3320%;
-    }
-    .salad-page-header {
-      top: -285%;
-    }
-    .low-carb-page-header {
-      top: 3535%;
-    }
-    .budget-friendly-page-header {
-      top: 4860%;
-    }
-    .cate-meal-course-title {
-      width: 28%;
-      top: 69%;
-    } 
-    .cate-breakfasts-title {
-      width: 45%;
-    } 
-    .cate-apps-sides-title {
-      width: 20%;
-      top: 30%;
-    }
-    .cate-dinner-title {
-      width: 40%;
-    }
-    .cate-dessert-title {
-      width: 45%;
-      top: 5100%;
-    }
-    .cate-drinks-title,
-    .cate-salad-title {
-      width: 40%;
-      top: 40%;
-    }
-    .cate-snacks-title {
-      width: 40%;
-      top: 3740%;
-    }
-    .cate-low-carb-title {
-      width: 20%;
-      top: 3930%;
-    }
-    .cate-quick-easy-title {
-      width: 22%;
-      top: 38%;
-    }
-    .cate-budget-friendly-title {
-      width: 35%;
-      top: 5245%;
-    }
-    .apps-sides-row-1 {
-      padding-top: 40px;
-    }
-    .dessert-row-1 {
-      padding-top: 2050px;
-    }  
-    .drinks-row-1 {
-      padding-top: 20px;
-    }
-    .snacks-row-1 {
-      padding-top: 1500px;
-    }
-    .salad-nav {
-      padding-top: 50px;
-    }
-    .low-carb-row-1 {
-      padding-top: 1600px;
-    }
-    .quick-easy-row-1 {
-      padding-top: 40px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 2120px;
-    }
-
-    .question-title {
-      padding: 0 10px;
-    }
-    .sugar-equivalence-title {
-      font-size: 2rem;
-      padding: 0 15px;
-      line-height: 2.5rem;
-    }
-    .sugar-compare {
-      display: flex;
-      flex-flow: column;
-      flex-wrap: wrap;
-      padding: 0;
-    }
-    .pic-sugar-compare {
-      padding: 0;
-    }
-    .pic-sugar-cube {
-      padding-top: 130px;
-    }
-    .sugar-compare-cube,
-    .sugar-compare-tsp,
-    .sugar-compare-packet {
-      width: 50%;
-    }
-    .sugar-compare-packet {
-      padding-bottom: 100px;
-    }
-    .sugar-compare-equals-left,
-    .sugar-compare-equals-right {
-      width: 100%;
-      height: 100px;
-    }
-    .pic-sugar-equals-left,
-    .pic-sugar-equals-right {
-      width: 20%;
-    }
-    .sugar-compare-descriptions {
-      text-align: center;
-      font-size: 1.5rem;
-      padding-top: 10px;
-    }  
-
-    .list {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-      font-size: 1.7rem;
-      line-height: 1.3em;
-      padding-left: 30px;
-      padding-bottom: 0;
-      width: 90%;
-      top: 5%;
-      word-wrap: break-word;
-    }
-    .list-sweetener {
-      top: 97%;
-      padding: 0 40px;
-    }
-    .sugar-forms {
-      font-size: 3rem;
-    }
-    .sweetener-forms {
-      padding-top: 2440px;
-      font-size: 2.5rem;
-    }
 }    
+
+
+
+
+
+
+
 
 
 
