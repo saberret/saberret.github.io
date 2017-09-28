@@ -1272,17 +1272,20 @@ body {
 }
 
 .list-sweetener {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
+  /*-webkit-column-count: 2; *//* Chrome, Safari, Opera */
+  /*-moz-column-count: 2;*/ /* Firefox */
+  /*column-count: 2;*/
   line-height: 1.5em;
   position: absolute;
   top: 96%;
-  left: 0;
-  right: 0;
+/*  left: 0;
+  right: 0;*/
   padding-bottom: 100px;
   list-style-type: initial;
-
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .list-sweetener li {
@@ -1331,7 +1334,7 @@ body {
       text-align: center;
       width: 100%;
       position: absolute;
-      top: 90%;
+      top: 85%;
       bottom: 0;
       left: 0;
       right: 0;
@@ -1398,28 +1401,30 @@ body {
     }
     .lunch-page-header, 
     .breakfasts-page-header,  
-    .apps-sides-page-header,
     .dinner-page-header,
     .quick-easy-page-header {
       top: -470%;
     }
+    .apps-sides-page-header {
+      top: -445%;
+    }
     .dessert-page-header {
-      top: 4680%;
+      top: 5540%;
     }
     .drinks-page-header {
-      top: -365%;
+      top: -460%;
     }
     .snacks-page-header {
-      top: 3320%;
+      top: 3980%;
     }
     .salad-page-header {
-      top: -285%;
+      top: -370%;
     }
     .low-carb-page-header {
-      top: 3535%;
+      top: 4500%;
     }
     .budget-friendly-page-header {
-      top: 4860%;
+      top: 6120%;
     }
     .cate-meal-course-title {
       width: 28%;
@@ -1437,20 +1442,23 @@ body {
     }
     .cate-dessert-title {
       width: 45%;
-      top: 5100%;
+      top: 6050%;
     }
-    .cate-drinks-title,
+    .cate-drinks-title {
+      width: 40%;
+      top: 50%;
+    }
     .cate-salad-title {
       width: 40%;
       top: 40%;
     }
     .cate-snacks-title {
       width: 40%;
-      top: 3740%;
+      top: 4500%;
     }
     .cate-low-carb-title {
       width: 20%;
-      top: 3930%;
+      top: 5000%;
     }
     .cate-quick-easy-title {
       width: 22%;
@@ -1458,35 +1466,35 @@ body {
     }
     .cate-budget-friendly-title {
       width: 35%;
-      top: 5245%;
+      top: 6600%;
     }
     .apps-sides-row-1 {
       padding-top: 40px;
     }
     .dessert-row-1 {
-      padding-top: 2050px;
+      padding-top: 2450px;
     }  
     .drinks-row-1 {
       padding-top: 20px;
     }
     .snacks-row-1 {
-      padding-top: 1500px;
+      padding-top: 1800px;
     }
     .salad-nav {
       padding-top: 50px;
     }
     .low-carb-row-1 {
-      padding-top: 1600px;
+      padding-top: 2050px;
     }
     .quick-easy-row-1 {
       padding-top: 40px;
     }
     .budget-friendly-row-1 {
-      padding-top: 2120px;
+      padding-top: 2700px;
     }
 
     .question-title {
-      padding: 0 10px;
+      padding: 0 20px;
     }
     .sugar-equivalence-title {
       font-size: 2rem;
@@ -1516,7 +1524,7 @@ body {
     .sugar-compare-equals-left,
     .sugar-compare-equals-right {
       width: 100%;
-      height: 100px;
+      height: 130px;
     }
     .pic-sugar-equals-left,
     .pic-sugar-equals-right {
@@ -1543,13 +1551,15 @@ body {
     .list-sweetener {
       top: 97%;
       padding: 0 40px;
+      flex-wrap: nowrap;
     }
     .sugar-forms {
       font-size: 3rem;
     }
     .sweetener-forms {
-      padding-top: 2440px;
+      padding-top: 2260px;
       font-size: 2.5rem;
+      /*line-height: 3.5rem;*/
     }
 }    
 
