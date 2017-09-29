@@ -65,6 +65,17 @@ body {
   opacity: .95;
 }
 
+.logo-change {
+  visibility: hidden;
+  display: block;
+  width: 267px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 .nav-cates {
   max-width: 1100px;
   margin: 0 auto;
@@ -148,7 +159,7 @@ body {
 /*sticky nav*/
 
 .site-nav {
-  border: 1px solid blue;
+/*  border: 1px solid blue;*/
   position: fixed;
   top: 0;
   left: 95%;
@@ -162,29 +173,27 @@ body {
   /*align-content: center;*/
   align-items: flex-end;
   /*visibility: hidden;*/
-  transition: all .2s ease-in;
+  transition: all .1s ease-in;
 }
 
 .site-nav.fixed {
-  width: 100%;
-  border: 1px solid red;
-  bottom: 50%;
+/*  border: 1px solid red;*/
 }
 
 .sticky-home, .sticky-meal-course, .sticky-low-carb, .sticky-quick-easy, .sticky-budget-friendly, .sticky-question {
   width: 32%;
-  transition: all .2s ease-in;
+  transition: all .1s ease-in;
 }
 
 .sticky-home.fixed, .sticky-meal-course.fixed, .sticky-low-carb.fixed, .sticky-quick-easy.fixed, .sticky-budget-friendly.fixed, .sticky-question.fixed {
-  width: 75%;
+  width: 100%;
   margin-right: 20px;
 }
 
 .sticky-pics {
 /*  display: block;*/
   width: 50%;
-  transition: all .2s ease-in;
+  transition: all .1s ease-in;
 }
 
 .sticky-pics.fixed {
@@ -992,7 +1001,7 @@ body {
 }
 
 .budget-friendly-main {
-  height: 1600px;
+  height: 1550px;
   z-index: 489;
 }
 
@@ -1265,6 +1274,7 @@ body {
   right: 5%;
   padding-bottom: 150px;
   width: 100%;
+  max-width: 900px;
 }
 
 .list-sugar {
@@ -1282,7 +1292,7 @@ body {
   right: 0;*/
   padding-bottom: 100px;
   list-style-type: initial;
-  max-width: 1000px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1339,6 +1349,12 @@ body {
     .sugar-compare-equals-left,
     .sugar-compare-equals-right {
       width: 13%;
+    }
+    .list {
+      max-width: 800px;
+    }
+    .sweetener-forms {
+      padding-top: 1110px;
     }
     .list-sweetener {
       left: 12%;
@@ -1487,10 +1503,10 @@ body {
       top: -550%;
     }
     .low-carb-page-header {
-      top: 3700%;
+      top: 3850%;
     }
     .budget-friendly-page-header {
-      top: 5000%;
+      top: 5250%;
     }
     .cate-meal-course-title {
       width: 20%;
@@ -1528,7 +1544,7 @@ body {
     }
     .cate-low-carb-title {
       width: 14%;
-      top: 4650%;
+      top: 4780%;
     }
     .cate-quick-easy-title {
       width: 17%;
@@ -1536,7 +1552,7 @@ body {
     }
     .cate-budget-friendly-title {
       width: 26%;
-      top: 5930%;
+      top: 6150%;
     }
     .breakfasts-row-1,
     .apps-sides-row-1,
@@ -1560,7 +1576,7 @@ body {
       padding-top: 2000px;
     }
     .budget-friendly-row-1 {
-      padding-top: 2450px;
+      padding-top: 2550px;
     }
 
     .question-title {
@@ -1600,11 +1616,13 @@ body {
       font-size: 2rem;
       padding-left: 20%;
       top: 4%;
+      max-width: 600px;
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 80px;
+      padding: 0 70px 0 0;
       flex-wrap: nowrap;
+      max-width: 600px;
     }
     .sugar-forms {
       font-size: 3rem;
@@ -1875,17 +1893,18 @@ body {
       width: 90%;
       top: 5%;
       word-wrap: break-word;
+      max-width: 300px;
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 40px;
+      padding: 0 40px 0 0;
       flex-wrap: nowrap;
     }
     .sugar-forms {
       font-size: 3rem;
     }
     .sweetener-forms {
-      padding-top: 2150px;
+      padding-top: 2330px;
       font-size: 2.5rem;
       line-height: 3rem;
       padding-left: 20px;
@@ -2028,6 +2047,9 @@ body {
       padding-left: 20px;
       padding-right: 20px;
     }
+    .sweetener-forms {
+      padding-top: 2330px;
+    }
 }
 
 
@@ -2155,10 +2177,10 @@ body {
       top: -370%;
     }
     .low-carb-page-header {
-      top: 4500%;
+      top: 4620%;
     }
     .budget-friendly-page-header {
-      top: 6120%;
+      top: 6350%;
     }
     .cate-meal-course-title {
       width: 28%;
@@ -2192,7 +2214,7 @@ body {
     }
     .cate-low-carb-title {
       width: 20%;
-      top: 5000%;
+      top: 5110%;
     }
     .cate-quick-easy-title {
       width: 22%;
@@ -2200,7 +2222,7 @@ body {
     }
     .cate-budget-friendly-title {
       width: 35%;
-      top: 6600%;
+      top: 6850%;
     }
     .apps-sides-row-1 {
       padding-top: 40px;
@@ -2218,13 +2240,13 @@ body {
       padding-top: 50px;
     }
     .low-carb-row-1 {
-      padding-top: 2050px;
+      padding-top: 2100px;
     }
     .quick-easy-row-1 {
       padding-top: 40px;
     }
     .budget-friendly-row-1 {
-      padding-top: 2700px;
+      padding-top: 2780px;
     }
 
     .question-title {
@@ -2281,17 +2303,18 @@ body {
       width: 90%;
       top: 5%;
       word-wrap: break-word;
+      max-width: 300px;
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 40px;
+      padding: 0 40px 0 0;
       flex-wrap: nowrap;
     }
     .sugar-forms {
       font-size: 3rem;
     }
     .sweetener-forms {
-      padding-top: 2260px;
+      padding-top: 2330px;
       font-size: 2.5rem;
       /*line-height: 3.5rem;*/
     }
@@ -2598,7 +2621,7 @@ body {
       font-size: 3rem;
     }
     .sweetener-forms {
-      padding-top: 2090px;
+      padding-top: 2330px;
       font-size: 2.5rem;
       /*line-height: 3.5rem;*/
     }
@@ -2853,10 +2876,11 @@ body {
       width: 90%;
       top: 5%;
       word-wrap: break-word;
+      max-width: 300px;
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 40px;
+      padding: 0 40px 0 0;
       flex-wrap: nowrap;
     }
     .sugar-forms {
