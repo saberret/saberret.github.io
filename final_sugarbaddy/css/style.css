@@ -1305,7 +1305,7 @@ body {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 25%;
+      bottom: -9%;
     }
     .pic-plain-circle {
       width: 75%;
@@ -1320,29 +1320,34 @@ body {
       height: 650px;
     }
     .cate-course {
-      left: 7%;
-      top: -5%;
-      width: 39%;
+      left: 12%;
+      top: 31%;
+      width: 28%;
+      z-index: 5;
     }
     .cate-low-carb {
-      left: 14%;
-      top: 25%;
-      width: 31%;
-    }
-    .cate-quick-easy {
-      left: 41%;
-      top: 36%;
-      width: 53%;
+      left: 29%;
+      top: 3%;
+      width: 22%;
+      z-index: 5;
     }
     .cate-budget-friendly {
-      left: 47%;
-      width: 36%;
+      left: 59%;
       top: 7%;
+      z-index: 10;
+      width: 24%;
+    }
+    .cate-quick-easy {
+      left: 44%;
+      top: 35%;
+      z-index: 5;
+      width: 34%;
     }
     .cate-question {
-      left: 8%;
-      top: 51%;
-      width: 23%;
+      left: 74%;
+      top: 41%;
+      width: 16%;
+      z-index: 10;
     }
      .blurb {
       font-size: 1.2rem;
@@ -1350,7 +1355,7 @@ body {
       text-align: center;
       width: 100%;
       position: absolute;
-      top: 445%;
+      top: 470%;
       bottom: 0;
       left: 0;
       right: 0;
@@ -1362,37 +1367,38 @@ body {
       padding-bottom: 1050px;
     }
     .cate-headers {
-      width: 75%;
+      width: 65%;
     }
     .meal-course-nav {
       position: absolute;
       left: 0;
       right: 0;
-      top: -20%;
+      top: -52%;
      } 
     .cate-wrap--top {
       margin-bottom: 15px;
     }
     .group {
-      width: 40%;
+      width: 20%;
     }
     .group-1 {
-      top: 12%;
+      top: 18%;
     }
     .group-2 {
-      top: 25%;
-      left: 51%;
+      top: 29%;
+      left: 29%;
     }
     .group-3 {
-      top: 64%;
-      left: 9%;
+      top: 18%;
+      left: 50%;
     }
     .group-4 {
-      left: 51%;
-      top: 77%;
+      left: 71%;
+      top: 29%;
     }
     .cate-course-main {
-      padding-bottom: 230%;
+      padding-bottom: 0%;
+      height: 700px;
     }
     .breakfasts-main,
     .apps-sides-main,
@@ -1406,70 +1412,74 @@ body {
     .breakfasts-page-header,  
     .dinner-page-header,
     .quick-easy-page-header {
-      top: -555%;
+      top: -855%;
     }
     .apps-sides-page-header {
-      top: -535%;
+      top: -850%;
     }
     .dessert-page-header {
-      top: 7040%;
+      top: 4600%;
     }
     .drinks-page-header {
-      top: -585%;
+      top: -900%;
     }
     .snacks-page-header {
-      top: 5100%;
+      top: 3000%;
     }
     .salad-page-header {
-      top: -370%;
+      top: -550%;
     }
     .low-carb-page-header {
-      top: 5650%;
+      top: 3700%;
     }
     .budget-friendly-page-header {
-      top: 7700%;
+      top: 5000%;
     }
     .cate-meal-course-title {
-      width: 28%;
-      top: 69%;
-    } 
+      width: 20%;
+      top: 75%;
+    }
     .cate-breakfasts-title {
-      width: 45%;
+      width: 38%;
     } 
     .cate-apps-sides-title {
-      width: 20%;
+      width: 16%;
       top: 30%;
     }
+    .cate-lunch-title {
+      width: 30%;
+      top: 80%;
+    }
     .cate-dinner-title {
-      width: 40%;
+      width: 36%;
     }
     .cate-dessert-title {
-      width: 45%;
-      top: 7670%;
+      width: 35%;
+      top: 5510%;
     }
     .cate-drinks-title {
-      width: 40%;
+      width: 35%;
       top: 50%;
     }
     .cate-salad-title {
-      width: 35%;
+      width: 30%;
       top: 40%;
     }
     .cate-snacks-title {
-      width: 40%;
-      top: 5750%;
+      width: 35%;
+      top: 3940%;
     }
     .cate-low-carb-title {
-      width: 17%;
-      top: 6300%;
+      width: 14%;
+      top: 4650%;
     }
     .cate-quick-easy-title {
-      width: 22%;
-      top: 38%;
+      width: 17%;
+      top: 55%;
     }
     .cate-budget-friendly-title {
-      width: 30%;
-      top: 8330%;
+      width: 26%;
+      top: 5930%;
     }
     .breakfasts-row-1,
     .apps-sides-row-1,
@@ -1478,22 +1488,22 @@ body {
       padding-top: 80px;
     }
     .dessert-row-1 {
-      padding-top: 3150px;
+      padding-top: 2300px;
     }  
     .drinks-row-1 {
       padding-top: 60px;
     }
     .snacks-row-1 {
-      padding-top: 2350px;
+      padding-top: 1650px;
     }
     .salad-nav {
       padding-top: 65px;
     }
     .low-carb-row-1 {
-      padding-top: 2550px;
+      padding-top: 2000px;
     }
     .budget-friendly-row-1 {
-      padding-top: 3400px;
+      padding-top: 2450px;
     }
 
     .question-title {
@@ -1503,68 +1513,49 @@ body {
       font-size: 2rem;
       padding: 0 45px;
       line-height: 2.5rem;
-    }
+      top: 1050%;
+    } 
     .sugar-compare {
-      display: flex;
-      flex-flow: column;
-      flex-wrap: wrap;
-      padding: 0;
+      margin-top: 205px;
     }
-    .pic-sugar-compare {
-      padding: 0;
-    }
-    .pic-sugar-cube {
-      padding-top: 130px;
+    .sugar-compare-descriptions {
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 10px;
     }
     .sugar-compare-cube,
     .sugar-compare-tsp,
     .sugar-compare-packet {
-      width: 50%;
-    }
-    .sugar-compare-packet {
-      padding-bottom: 100px;
+      width: 22%;
     }
     .sugar-compare-equals-left,
     .sugar-compare-equals-right {
-      width: 100%;
-      height: 160px;
+      width: 10%;
     }
-    .pic-sugar-equals-left,
-    .pic-sugar-equals-right {
-      width: 20%;
-    }
-    .sugar-compare-descriptions {
-      text-align: center;
-      font-size: 1.5rem;
-      padding-top: 10px;
-    }  
+    .pic-sugar-compare {
+      padding: 0 10px;
+    } 
 
     .list {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1;
-      font-size: 1.7rem;
-      line-height: 1.3em;
-      padding-left: 30px;
-      padding-bottom: 0;
-      width: 90%;
-      top: 5%;
-      word-wrap: break-word;
+      font-size: 2rem;
+      padding-left: 20%;
+      top: 4%;
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 40px;
+      padding: 0 80px;
       flex-wrap: nowrap;
     }
     .sugar-forms {
       font-size: 3rem;
     }
     .sweetener-forms {
-      padding-top: 2150px;
+      padding-top: 2400px;
       font-size: 2.5rem;
       line-height: 3rem;
-      padding-left: 20px;
-      padding-right: 20px;
     }
 } 
 
