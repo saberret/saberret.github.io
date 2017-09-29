@@ -171,12 +171,12 @@ body {
   bottom: 50%;
 }
 
-.sticky-home, .sticky-meal-course, .sticky-low-carb, .sticky-quick-easy, .sticky-budget-friendly {
+.sticky-home, .sticky-meal-course, .sticky-low-carb, .sticky-quick-easy, .sticky-budget-friendly, .sticky-question {
   width: 32%;
   transition: all .2s ease-in;
 }
 
-.sticky-home.fixed, .sticky-meal-course.fixed, .sticky-low-carb.fixed, .sticky-quick-easy.fixed, .sticky-budget-friendly.fixed {
+.sticky-home.fixed, .sticky-meal-course.fixed, .sticky-low-carb.fixed, .sticky-quick-easy.fixed, .sticky-budget-friendly.fixed, .sticky-question.fixed {
   width: 75%;
   margin-right: 20px;
 }
@@ -1293,7 +1293,16 @@ body {
 }
 
 
-/*media sizes*/
+/*media sizes
+1024
+768
+480
+414
+412
+400
+375
+360
+320*/
 
 
 @media only screen and (max-width: 1024px) {
@@ -1362,6 +1371,9 @@ body {
     }
     .nav-cates {
       height: 650px;
+    }
+    .nav-cate-course {
+      height: 800px;
     }
     .cate-course {
       left: 12%;
@@ -1629,6 +1641,9 @@ body {
     .nav-cates {
       height: 650px;
     }
+    .nav-cate-course {
+      height: 800px;
+    }
     .cate-course {
       left: 7%;
       top: -5%;
@@ -1881,6 +1896,9 @@ body {
 
 
 @media only screen and (max-width: 414px) {
+    .nav-cate-course {
+      height: 800px;
+    }
     .cate-course-main {
       padding-bottom: 250%;
     }
@@ -2596,7 +2614,7 @@ body {
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 25%;
+      bottom: 38%;
     }
     .pic-plain-circle {
       width: 75%;
@@ -2606,6 +2624,9 @@ body {
       position: absolute;
       left: 0;
       right: 0;
+    }
+    .logo-wrap {
+      top: 16px;
     }
     .blurb {
       font-size: 1.2rem;

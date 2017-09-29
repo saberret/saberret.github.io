@@ -12,6 +12,7 @@ $(document).ready(function () {
 			$('sticky-low-carb').addClass('fixed');
 			$('sticky-quick-easy').addClass('fixed');
 			$('sticky-budget-friendly').addClass('fixed');
+			$('sticky-question').addClass('fixed');
 
 		} else {
 			$('site-nav').removeClass('fixed');
@@ -21,6 +22,7 @@ $(document).ready(function () {
 			$('sticky-low-carb').removeClass('fixed');
 			$('sticky-quick-easy').removeClass('fixed');
 			$('sticky-budget-friendly').removeClass('fixed');
+			$('sticky-question').removeClass('fixed');
 		}
 	})
 
