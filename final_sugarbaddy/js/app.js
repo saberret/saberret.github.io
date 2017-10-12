@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
-	$('.logo-wrap').mouseenter(function () {
-		$('.logo-change').css('visibility', 'visible');
-		$('.logo').hide();
+	$('.top-section').mouseenter(function () {
+		$('.pic-logo-change').css('visibility', 'visible');
+		$('.pic-logo-circle-half').hide();
 	});	
-	$('.logo-wrap').mouseleave(function () {
-		$('.logo-change').css('visibility', 'hidden');
-		$('.logo').show();
+	$('.top-section').mouseleave(function () {
+		$('.pic-logo-change').css('visibility', 'hidden');
+		$('.pic-logo-circle-half').show();
 	});
 	
 

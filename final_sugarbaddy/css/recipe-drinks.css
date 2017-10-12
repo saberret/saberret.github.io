@@ -10,7 +10,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: -0.5%;
+  top: 0;
   bottom: 0;
   display: block;
   margin: 0 auto;
@@ -25,24 +25,14 @@
 }
 
 .cate-recipe-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 1.5%;
-  bottom: 0;
-  display: block;
-  width: 162px;
-  margin: 0 auto;
-  z-index: 10;
-  letter-spacing: 0.05em;
-  padding-bottom: 20px;
+  visibility: hidden;
 }
 
 .recipe-wrapper {
   margin: 0 auto;
   max-width: 1100px;
   position: relative;
-  padding-top: 220px;
+  padding-top: 140px;
 }
 
 
@@ -61,7 +51,7 @@
   font-size: 1.3rem;
   line-height: 1.5em;
   padding-bottom: 40px;
-  padding-top: 20px;
+  padding-top: 64px;
   letter-spacing: 0.05em;
 }
 
@@ -79,15 +69,14 @@
 }
 
 .serving-size {
-  position: absolute;
-  /*left: 0;*/
-  right: 0;
   font-family: Catcafe;
   color: #89f7de;
   font-size: 1.3rem;
-  padding-top: 20px;
   letter-spacing: 0.05em;
   text-transform: none;
+  position: absolute;
+  left: 0;
+  padding-top: 8%;
 }
 
 .step-label {
@@ -126,6 +115,32 @@
 .list-nutrition {
   padding-bottom: 10%;
 }
+
+
+
+@media only screen and (max-width: 1140px) {
+    html {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .breakfast-recipe-main {
+      padding: 0 5%;
+    }
+    .recipe-pic {
+      resize: auto;
+      width: 100%;
+      padding-bottom: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+}
+
+
+
+
+
+
 
 
 

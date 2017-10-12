@@ -3,21 +3,12 @@ body {
   background-repeat: repeat;
 }
 
-
-
 .main {
-  /*max-width: 1200px;*/
-  background-image: url(../images/pattern-speckles.png);
-  background-repeat: repeat;
   position: relative;
   width: 100%;
-/*  height: 850px;*/
-  z-index: 2000;
 }
 
 .top-section {  
-  background-image: url(../images/pattern-speckles.png);
-  background-repeat: repeat;
   position: relative;
   width: 100%;
   height: 150px;
@@ -38,42 +29,31 @@ body {
 
 .half-circle {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.pic-plain-circle {
+.pic-logo-circle-half {
   display: block;
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   z-index: 0;
-  transform: rotate(-293deg);
-}
-
-.logo-wrap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 25px;
-}
-
-.logo {
-  display: block;
-  width: 280px;
-  margin: 0 auto;
-  opacity: .95;
 }
 
 .logo-change {
-  visibility: hidden;
-  display: block;
-  width: 267px;
-  margin: 0 auto;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
+}
+
+.pic-logo-change {
+  visibility: hidden;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
 }
 
 .nav-cates {
@@ -133,7 +113,6 @@ body {
   position: relative;
 }
 
-
 .question-text {
   position: absolute;
   left: 0;
@@ -174,6 +153,7 @@ body {
   align-items: flex-end;
   /*visibility: hidden;*/
   transition: all .1s ease-in;
+  z-index: 99999;
 }
 
 .site-nav.fixed {
@@ -202,17 +182,7 @@ body {
 }
 
 
-
-/*.sticky-pic-mini {
-  width: 25%;
-}*/
-
-
-
-
-
-
-/*meal course categories page*/
+/*meal course page*/
 
 .cate-course-main {
   background-image: url(../images/pattern-speckles-peach.png);
@@ -235,33 +205,18 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: -22%;
+  top: 0;
  } 
 
 .cate-headers {
   display: block;
   width: 300px;
   margin: 0 auto;
-  z-index: 0;
-  transform: rotate(-293deg);
-}
-
-.cate-header-titles {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 67%;
-  bottom: 0;
-  display: block;
-  width: 120px;
-  margin: 0 auto;
-  z-index: 10; 
 }
 
 .group {
   position: absolute;
   width: 15%;
-
 }
 
 .group-1 {
@@ -271,7 +226,7 @@ body {
 
 .group-2 {
   left: 30%;
-  top: 28%;
+  top: 23%;
 }
 
 .group-3 {
@@ -281,7 +236,7 @@ body {
 
 .group-4 {
   left: 74%;
-  top: 28%;
+  top: 23%;
 }
 
 .course-img {
@@ -324,11 +279,9 @@ body {
   width: 45%;
 }
 
-.lunch-link, .pic-lunch-text {
-  width: 65%;
-}
-
-.dinner-link, .pic-dinner-text {
+.lunch-link, .pic-lunch-text ,
+.dinner-link, .pic-dinner-text,
+.salads-link, .pic-salads-text  {
   width: 65%;
 }
 
@@ -336,21 +289,14 @@ body {
   width: 75%;
 }
 
-.drinks-link, .pic-drinks-text {
-  width: 70%;
-}
-
+.drinks-link, .pic-drinks-text,
 .snacks-link, .pic-snacks-text {
   width: 70%;
 }
 
-.salads-link, .pic-salads-text {
-  width: 65%;
-}
 
-
-
-/*breakfast / lunch / dessert / snacks page*/
+/*breakfast / apps sides / lunch / dinner / dessert / 
+drinks / snacks / salads pages*/
 
 .lunch-main,
 .breakfasts-main,
@@ -362,171 +308,6 @@ body {
   width: 100%;
 }
 
-.lunch-main {
-  height: ;
-  z-index: 497;
-  padding-bottom: 100px;
-}
-
-.breakfasts-main {
-  height: 1280px;
-  z-index: 499;
-}
-
-.dessert-main {
-  height: 1740px;
-  z-index: 495;
-}
-
-.snacks-main {
-  height: 1640px;
-  z-index: 493;
-}
-
-.lunch-nav,
-.breakfasts-nav,
-.dessert-nav,
-.snacks-nav {
-  background-image: url(../images/pattern-speckles-warm.png);
-  background-repeat: repeat;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 40px;
-  /*z-index: 1;*/
-}
-
-.lunch-page-header,
-.breakfasts-page-header,
-.dessert-page-header,
-.snacks-page-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -500%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.lunch-nav-circle,
-.breakfasts-nav-circle,
-.dessert-nav-circle,
-.snacks-nav-circle {
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-  z-index: 1;
-  transform: rotate(-293deg);
-}
-
-.cate-lunch-title,
-.cate-breakfasts-title,
-.cate-dessert-title,
-.cate-snacks-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 500; 
-}
-
-.cate-lunch-title {
-  width: 146px;
-}
-
-.cate-breakfasts-title {
-  width: 186px;  
-}
-
-.cate-dessert-title,
-.cate-snacks-title {
-  width: 156px;
-}
-
-.lunch-row, 
-.breakfasts-row,
-.dessert-row,
-.snacks-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-end;
-  position: relative;
-  /*border: 1px solid red;*/
-  width: 100%;
-/*  z-index: 10;*/
-}
-
-.lunch-row-1,
-.breakfasts-row-1,
-.dessert-row-1,
-.snacks-row-1 {
-  padding-top: 40px;
-}
-
-.lunch-recipe,
-.breakfasts-recipe, 
-.dessert-recipe,
-.snacks-recipe {
-  /*border: 1px solid blue;*/
-  width: 300px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 30px;
-  z-index: 100;
-}
-
-.pic-lunch,
-.pic-breakfast,
-.pic-dessert,
-.pic-snacks {
-  display: block;
-  width: 100%;
-  z-index: 100;
-}
-
-.lunch-title,
-.breakfast-title,
-.dessert-title,
-.snacks-title {
-  font-family: coquerli-regular;
-  color: #b37e8f;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.2em;
-  z-index: 100;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.lunch-recipe-link,
-.breakfast-recipe-link ,
-.dessert-recipe-link,
-.snacks-recipe-link {
-  text-decoration: none;
-  z-index: 100;
-}
-
-.lunch-recipe:hover,
-.breakfasts-recipe:hover,
-.dessert-recipe:hover,
-.snacks-recipe:hover {
-  /*border: 3px solid #9f7180; */
-  padding: 0 20px 40px 20px;
-  background-color: #fde174;
-}
-
-
-
-/*apps-sides / dinner / drink / salad page*/
-
 .drinks-main,
 .dinner-main,
 .apps-sides-main,
@@ -537,8 +318,28 @@ body {
   width: 100%;
 }
 
+.lunch-main {
+  height: 1480px;
+  z-index: 497;
+}
+
+.breakfasts-main {
+  height: 1280px;
+  z-index: 499;
+}
+
+.dessert-main {
+  height: 1700px;
+  z-index: 495;
+}
+
+.snacks-main {
+  height: 1600px;
+  z-index: 493;
+}
+
 .drinks-main {
-  height: 1300px;
+  height: 1250px;
   z-index: 494;
 }
 
@@ -557,139 +358,66 @@ body {
   z-index: 492;
 }
 
+.lunch-nav,
+.breakfasts-nav,
+.dessert-nav,
+.snacks-nav {
+  background-image: url(../images/pattern-speckles-warm.png);
+  background-repeat: repeat;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+}
+
 .dinner-nav,
 .apps-sides-nav,
-.drinks-nav {
+.drinks-nav,
+.salad-nav  {
   background-image: url(../images/pattern-speckles-light.png);
   background-repeat: repeat;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   padding-top: 40px;
-  /*z-index: 1;*/
 }
 
-.salad-nav {
-  background-image: url(../images/pattern-speckles-light.png);
-  background-repeat: repeat;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 80px;
-  /*z-index: 1;*/
-}
-
-.dinner-page-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -500%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-
-.drinks-page-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -480%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;  
-}
-
-.apps-sides-page-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -550%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-}
-
+.lunch-page-header,
+.breakfasts-page-header,
+.dessert-page-header,
+.snacks-page-header,
+.dinner-page-header,
+.drinks-page-header,
+.apps-sides-page-header,
 .salad-page-header {
   position: absolute;
   left: 0;
   right: 0;
-  top: -234%;
+  top: 0;
   bottom: 0;
   display: block;
   margin: 0 auto;
-  z-index: 1;  
+  z-index: 1;
 }
 
+.lunch-nav-circle,
+.breakfasts-nav-circle,
+.dessert-nav-circle,
+.snacks-nav-circle,
 .drinks-nav-circle,
 .dinner-nav-circle,
-.salad-nav-circle {
+.salad-nav-circle,
+.apps-sides-nav-circle {
   display: block;
   width: 300px;
   margin: 0 auto;
   z-index: 1;
-  transform: rotate(-293deg);
 }
 
-.apps-sides-nav-circle {
-  display: block;
-  width: 350px;
-  margin: 0 auto;
-  z-index: 1;
-  transform: rotate(-293deg);
-}
-
-.cate-dinner-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  bottom: 0;
-  display: block;
-  width: 150px;
-  margin: 0 auto;
-  z-index: 500; 
-}
-
-.cate-drinks-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 58%;
-  bottom: 0;
-  display: block;
-  width: 162px;
-  margin: 0 auto;
-  z-index: 500;  
-}
-
-.cate-apps-sides-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  bottom: 0;
-  display: block;
-  width: 80px;
-  margin: 0 auto;
-  z-index: 500; 
-}
-
-.cate-salad-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 37%;
-  bottom: 0;
-  display: block;
-  width: 162px;
-  margin: 0 auto;
-  z-index: 500;  
-}
-
+.lunch-row, 
+.breakfasts-row,
+.dessert-row,
+.snacks-row,
 .drinks-row,
 .dinner-row,
 .apps-sides-row,
@@ -701,32 +429,27 @@ body {
   align-content: center;
   align-items: flex-end;
   position: relative;
-  /*border: 1px solid red;*/
   width: 100%;
-/*  z-index: 10;*/
+}
+
+.lunch-row-1,
+.breakfasts-row-1,
+.dessert-row-1,
+.snacks-row-1,
+.apps-sides-row-1,
+.dinner-row-1 {
+  padding-top: 40px;
 }
 
 .drinks-row-1,
-.dinner-row-1 {
+.salad-row-1 {
   padding-top: 60px;
 }
 
-.apps-sides-row-1 {
-  padding-top: 80px;
-}
-
-.drinks-recipe,
-.dinner-recipe,
-.apps-sides-recipe,
-.salad-recipe {
-  /*border: 1px solid blue;*/
-  width: 300px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 30px;
-  z-index: 100;
-}
-
+.pic-lunch,
+.pic-breakfast,
+.pic-dessert,
+.pic-snacks,
 .pic-drink,
 .pic-dinner,
 .pic-apps-sides,
@@ -736,12 +459,15 @@ body {
   z-index: 100;
 }
 
+.lunch-title,
+.breakfast-title,
+.dessert-title,
+.snacks-title,
 .drink-title,
 .dinner-title,
 .apps-sides-title,
 .salad-title {
   font-family: coquerli-regular;
-  color: #eb9c81;
   font-size: 2rem;
   text-align: center;
   line-height: 1.2em;
@@ -750,6 +476,24 @@ body {
   padding-top: 15px;
 }
 
+.lunch-title,
+.breakfast-title,
+.dessert-title,
+.snacks-title {
+  color: #b37e8f
+}
+
+.drink-title,
+.dinner-title,
+.apps-sides-title,
+.salad-title {
+  color: #eb9c81;
+}
+
+.lunch-recipe-link,
+.breakfast-recipe-link ,
+.dessert-recipe-link,
+.snacks-recipe-link,
 .drink-recipe-link,
 .dinner-recipe-link,
 .apps-sides-recipe-link,
@@ -758,29 +502,66 @@ body {
   z-index: 100;
 }
 
+.lunch-recipe,
+.breakfasts-recipe, 
+.dessert-recipe,
+.snacks-recipe,
+.drinks-recipe,
+.dinner-recipe,
+.apps-sides-recipe,
+.salad-recipe {
+  width: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 30px;
+  z-index: 100;
+}
+
+.lunch-recipe:hover,
+.breakfasts-recipe:hover,
+.dessert-recipe:hover,
+.snacks-recipe:hover {
+  padding: 0 20px 40px 20px;
+  background-color: #fde174;
+}
+
 .drinks-recipe:hover,
 .dinner-recipe:hover,
 .apps-sides-recipe:hover,
 .salad-recipe:hover {
-  /*border: 3px solid #9f7180; */
   padding: 0 20px 40px 20px;
   background-color: #fefbe3;
 }
 
 
 
-/*low carb page*/
+/*low carb / quick easy / budget friendly pages*/
 
 .low-carb-main {
   background-image: url(../images/pattern-speckles.png);
   background-repeat: repeat;
   position: relative;
   width: 100%;
-}
-
-.low-carb-main {
   height: 1400px;
   z-index: 491;
+}
+
+.quick-easy-main {
+  background-image: url(../images/pattern-speckles-warm.png);
+  background-repeat: repeat;
+  position: relative;
+  width: 100%;
+  height: 1800px;
+  z-index: 490;
+}
+
+.budget-friendly-main {
+  background-image: url(../images/pattern-speckles-plum.png);
+  background-repeat: repeat;
+  position: relative;
+  width: 100%;
+  height: 1550px;
+  z-index: 489;
 }
 
 .low-carb-nav {
@@ -790,108 +571,6 @@ body {
   margin: 0 auto;
   position: relative;
   padding-top: 40px;
-  /*z-index: 1;*/
-}
-
-.low-carb-page-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -500%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.low-carb-nav-circle {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
-  z-index: 1;
-  transform: rotate(-293deg);
-}
-
-.cate-low-carb-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  bottom: 0;
-  display: block;
-  width: 80px;
-  margin: 0 auto;
-  z-index: 500; 
-}
-
-.low-carb-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-end;
-  position: relative;
-  /*border: 1px solid red;*/
-  width: 100%;
-/*  z-index: 10;*/
-}
-
-.low-carb-row-1 {
-  padding-top: 60px;
-}
-
-.low-carb-recipe {
-  /*border: 1px solid blue;*/
-  width: 300px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 30px;
-  z-index: 100;
-}
-
-.pic-low-carb {
-  display: block;
-  width: 100%;
-  z-index: 100;
-}
-
-.low-carb-title {
-  font-family: coquerli-regular;
-  color: #b58293;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.2em;
-  z-index: 100;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.low-carb-recipe-link {
-  text-decoration: none;
-  z-index: 100;
-}
-
-.low-carb-recipe:hover {
-  /*border: 3px solid #9f7180; */
-  padding: 0 20px 40px 20px;
-  background-color: #c3f8ec;
-}
-
-
-
-/*quick easy page*/
-
-.quick-easy-main {
-  background-image: url(../images/pattern-speckles-warm.png);
-  background-repeat: repeat;
-  position: relative;
-  width: 100%;
-}
-
-.quick-easy-main {
-  height: 1800px;
-  z-index: 490;
 }
 
 .quick-easy-nav {
@@ -901,108 +580,6 @@ body {
   margin: 0 auto;
   position: relative;
   padding-top: 40px;
-  /*z-index: 1;*/
-}
-
-.quick-easy-page-header {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -500%;
-  bottom: 0;
-  display: block;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.quick-easy-nav-circle {
-  display: block;
-  width: 328px;
-  margin: 0 auto;
-  z-index: 1;
-  transform: rotate(-293deg);
-}
-
-.cate-quick-easy-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  bottom: 0;
-  display: block;
-  width: 90px;
-  margin: 0 auto;
-  z-index: 500; 
-}
-
-.quick-easy-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: flex-end;
-  position: relative;
-  /*border: 1px solid red;*/
-  width: 100%;
-/*  z-index: 10;*/
-}
-
-.quick-easy-row-1 {
-  padding-top: 60px;
-}
-
-.quick-easy-recipe {
-  /*border: 1px solid blue;*/
-  width: 300px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  padding: 30px;
-  z-index: 100;
-}
-
-.pic-quick-easy {
-  display: block;
-  width: 100%;
-  z-index: 100;
-}
-
-.quick-easy-title {
-  font-family: coquerli-regular;
-  color: #b58293;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.2em;
-  z-index: 100;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.quick-easy-recipe-link {
-  text-decoration: none;
-  z-index: 100;
-}
-
-.quick-easy-recipe:hover {
-  /*border: 3px solid #9f7180; */
-  padding: 0 20px 40px 20px;
-  background-color: #fde174;
-}
-
-
-
-/*budget friendly page*/
-
-.budget-friendly-main {
-  background-image: url(../images/pattern-speckles-plum.png);
-  background-repeat: repeat;
-  position: relative;
-  width: 100%;
-}
-
-.budget-friendly-main {
-  height: 1550px;
-  z-index: 489;
 }
 
 .budget-friendly-nav {
@@ -1012,40 +589,38 @@ body {
   margin: 0 auto;
   position: relative;
   padding-top: 40px;
-  /*z-index: 1;*/
 }
 
+.low-carb-page-header,
+.quick-easy-page-header,
 .budget-friendly-page-header {
   position: absolute;
   left: 0;
   right: 0;
-  top: -500%;
+  top: 0;
   bottom: 0;
   display: block;
   margin: 0 auto;
   z-index: 1;
 }
 
+.low-carb-nav-circle,
 .budget-friendly-nav-circle {
   display: block;
-  width: 318px;
+  width: 320px;
   margin: 0 auto;
   z-index: 1;
-  transform: rotate(-293deg);
 }
 
-.cate-budget-friendly-title {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  bottom: 0;
+.quick-easy-nav-circle {
   display: block;
-  width: 144px;
+  width: 328px;
   margin: 0 auto;
-  z-index: 500; 
+  z-index: 1;
 }
 
+.low-carb-row,
+.quick-easy-row,
 .budget-friendly-row {
   display: flex;
   flex-direction: row;
@@ -1054,17 +629,18 @@ body {
   align-content: center;
   align-items: flex-end;
   position: relative;
-  /*border: 1px solid red;*/
   width: 100%;
-/*  z-index: 10;*/
 }
 
+.low-carb-row-1,
+.quick-easy-row-1,
 .budget-friendly-row-1 {
   padding-top: 60px;
 }
 
+.low-carb-recipe,
+.quick-easy-recipe,
 .budget-friendly-recipe {
-  /*border: 1px solid blue;*/
   width: 300px;
   flex-grow: 1;
   flex-shrink: 1;
@@ -1072,10 +648,24 @@ body {
   z-index: 100;
 }
 
+.pic-low-carb,
+.pic-quick-easy,
 .pic-budget-friendly {
   display: block;
   width: 100%;
   z-index: 100;
+}
+
+.low-carb-title,
+.quick-easy-title {
+  font-family: coquerli-regular;
+  color: #b58293;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2em;
+  z-index: 100;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .budget-friendly-title {
@@ -1089,9 +679,21 @@ body {
   padding-top: 15px;
 }
 
+.low-carb-recipe-link,
+.quick-easy-recipe-link,
 .budget-friendly-recipe-link {
   text-decoration: none;
   z-index: 100;
+}
+
+.low-carb-recipe:hover {
+  padding: 0 20px 40px 20px;
+  background-color: #c3f8ec;
+}
+
+.quick-easy-recipe:hover {
+  padding: 0 20px 40px 20px;
+  background-color: #fde174;
 }
 
 .budget-friendly-recipe:hover {
@@ -1103,7 +705,6 @@ body {
 
 
 
-
 /*question page*/
 
 .question-main {
@@ -1111,7 +712,6 @@ body {
   background-repeat: repeat;
   position: relative;
   width: 100%;
-/*  height:;*/
 }
 
 .question-headline {
@@ -1304,6 +904,7 @@ body {
 
 
 /*media sizes
+1440
 1024
 768
 480
@@ -1315,33 +916,55 @@ body {
 320*/
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
     .nav-cates {
-      height: 650px;
+      height: 600px;
     }
     .nav-cate-course {
       height: 1100px;
     }
+}    
+
+@media only screen and (max-width: 1024px) {
+    .nav-cates {
+      height: 600px;
+    }
+    .nav-cate-course {
+      height: 1100px;
+    }
+
+    .lunch-main,
+    .breakfasts-main,
+    .dessert-main,
     .snacks-main,
-    .dessert-main {
-      height: 1550px;
-    }
-    .salad-main {
-      height: 1450px;
-    }
-    .low-carb-main {
-      height: 1300px;
-    }
-    .quick-easy-main {
-      height: 1700px;
-    }
+    .drinks-main,
+    .dinner-main,
+    .apps-sides-main,
+    .salad-main,
+    .low-carb-main,
+    .quick-easy-main,
     .budget-friendly-main {
-      height: 1350px;
-    }                    
+      height: 100%;
+    }
+
+    .lunch-row-3,
+    .breakfasts-row-3,
+    .dessert-row-3,
+    .snacks-row-3,
+    .drinks-row-3,
+    .dinner-row-3,
+    .apps-sides-row-3,
+    .salad-row-3,
+    .low-carb-row-3,
+    .quick-easy-row-3,
+    .budget-friendly-row-3 {
+      padding-bottom: 60px;
+    }
+                 
     .sugar-compare-cube,
     .sugar-compare-tsp,
     .sugar-compare-packet {
-      width: 22%;
+      width: 21%;
     }
     .pic-sugar-compare {
       padding: 0 15px;
@@ -1352,6 +975,7 @@ body {
     }
     .list {
       max-width: 800px;
+      left: 10%;
     }
     .sweetener-forms {
       padding-top: 1110px;
@@ -1360,9 +984,7 @@ body {
       left: 12%;
       max-width: 800px;
     }
-    
 }
-
 
 
 @media only screen and (max-width: 768px) {
@@ -1370,21 +992,7 @@ body {
       width: 100%;
       margin: 0 auto;
     }
-    .half-circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -9%;
-    }
-    .pic-plain-circle {
-      width: 75%;
-    }
-    .logo {
-      width: 43%;       
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
+   
     .nav-cates {
       height: 650px;
     }
@@ -1400,7 +1008,7 @@ body {
     .cate-low-carb {
       left: 29%;
       top: 3%;
-      width: 22%;
+      width: 24%;
       z-index: 5;
     }
     .cate-budget-friendly {
@@ -1439,14 +1047,8 @@ body {
       padding-bottom: 1050px;
     }
     .cate-headers {
-      width: 65%;
+      width: 45%;
     }
-    .meal-course-nav {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -52%;
-     } 
     .cate-wrap--top {
       margin-bottom: 15px;
     }
@@ -1472,112 +1074,7 @@ body {
     .cate-course-main {
       padding-bottom: 0%;
       height: 700px;
-    }
-    .breakfasts-main,
-    .apps-sides-main,
-    .dessert-main,
-    .snacks-main,
-    .low-carb-main,
-    .budget-friendly-main {
-      height: 100%;
-    }
-    .lunch-page-header, 
-    .breakfasts-page-header,  
-    .dinner-page-header,
-    .quick-easy-page-header {
-      top: -855%;
-    }
-    .apps-sides-page-header {
-      top: -850%;
-    }
-    .dessert-page-header {
-      top: 4600%;
-    }
-    .drinks-page-header {
-      top: -900%;
-    }
-    .snacks-page-header {
-      top: 3000%;
-    }
-    .salad-page-header {
-      top: -550%;
-    }
-    .low-carb-page-header {
-      top: 3850%;
-    }
-    .budget-friendly-page-header {
-      top: 5250%;
-    }
-    .cate-meal-course-title {
-      width: 20%;
-      top: 75%;
-    }
-    .cate-breakfasts-title {
-      width: 38%;
     } 
-    .cate-apps-sides-title {
-      width: 16%;
-      top: 30%;
-    }
-    .cate-lunch-title {
-      width: 30%;
-      top: 80%;
-    }
-    .cate-dinner-title {
-      width: 36%;
-    }
-    .cate-dessert-title {
-      width: 35%;
-      top: 5510%;
-    }
-    .cate-drinks-title {
-      width: 35%;
-      top: 50%;
-    }
-    .cate-salad-title {
-      width: 30%;
-      top: 40%;
-    }
-    .cate-snacks-title {
-      width: 35%;
-      top: 3940%;
-    }
-    .cate-low-carb-title {
-      width: 14%;
-      top: 4780%;
-    }
-    .cate-quick-easy-title {
-      width: 17%;
-      top: 55%;
-    }
-    .cate-budget-friendly-title {
-      width: 26%;
-      top: 6150%;
-    }
-    .breakfasts-row-1,
-    .apps-sides-row-1,
-    .lunch-row-1,
-    .quick-easy-row-1  {
-      padding-top: 80px;
-    }
-    .dessert-row-1 {
-      padding-top: 2300px;
-    }  
-    .drinks-row-1 {
-      padding-top: 60px;
-    }
-    .snacks-row-1 {
-      padding-top: 1650px;
-    }
-    .salad-nav {
-      padding-top: 65px;
-    }
-    .low-carb-row-1 {
-      padding-top: 2000px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 2550px;
-    }
 
     .question-title {
       padding: 0 20px;
@@ -1614,13 +1111,13 @@ body {
       -moz-column-count: 1;
       column-count: 1;
       font-size: 2rem;
-      padding-left: 20%;
+      padding-left: 12%;
       top: 4%;
       max-width: 600px;
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 70px 0 0;
+      padding: 0 70px 60px 0;
       flex-wrap: nowrap;
       max-width: 600px;
     }
@@ -1635,26 +1132,10 @@ body {
 } 
 
 
-
 @media only screen and (max-width: 480px) {
     html {
       width: 100%;
       margin: 0 auto;
-    }
-    .half-circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 25%;
-    }
-    .pic-plain-circle {
-      width: 75%;
-    }
-    .logo {
-      width: 43%;       
-      position: absolute;
-      left: 0;
-      right: 0;
     }
     .nav-cates {
       height: 650px;
@@ -1704,141 +1185,38 @@ body {
     .cate-course-main {
       padding-bottom: 1050px;
     }
+    .cate-course {
+      left: 11%;
+      top: -3%;
+      width: 33%;
+    }
     .cate-headers {
       width: 75%;
-    }
-    .meal-course-nav {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -20%;
-     } 
+    } 
     .cate-wrap--top {
       margin-bottom: 15px;
     }
     .group {
-      width: 40%;
+      width: 33%;
     }
     .group-1 {
-      top: 12%;
+      top: 17%;
     }
     .group-2 {
-      top: 25%;
+      top: 30%;
       left: 51%;
     }
     .group-3 {
-      top: 64%;
+      top: 61%;
       left: 9%;
     }
     .group-4 {
       left: 51%;
-      top: 77%;
+      top: 74%;
     }
     .cate-course-main {
-      padding-bottom: 230%;
+      padding-bottom: 216%;
     }
-    .breakfasts-main,
-    .apps-sides-main,
-    .dessert-main,
-    .snacks-main,
-    .low-carb-main,
-    .budget-friendly-main {
-      height: 100%;
-    }
-    .lunch-page-header, 
-    .breakfasts-page-header,  
-    .dinner-page-header,
-    .quick-easy-page-header {
-      top: -555%;
-    }
-    .apps-sides-page-header {
-      top: -535%;
-    }
-    .dessert-page-header {
-      top: 7040%;
-    }
-    .drinks-page-header {
-      top: -585%;
-    }
-    .snacks-page-header {
-      top: 5100%;
-    }
-    .salad-page-header {
-      top: -370%;
-    }
-    .low-carb-page-header {
-      top: 5650%;
-    }
-    .budget-friendly-page-header {
-      top: 7700%;
-    }
-    .cate-meal-course-title {
-      width: 28%;
-      top: 69%;
-    } 
-    .cate-breakfasts-title {
-      width: 45%;
-    } 
-    .cate-apps-sides-title {
-      width: 20%;
-      top: 30%;
-    }
-    .cate-dinner-title {
-      width: 40%;
-    }
-    .cate-dessert-title {
-      width: 45%;
-      top: 7670%;
-    }
-    .cate-drinks-title {
-      width: 40%;
-      top: 50%;
-    }
-    .cate-salad-title {
-      width: 35%;
-      top: 40%;
-    }
-    .cate-snacks-title {
-      width: 40%;
-      top: 5750%;
-    }
-    .cate-low-carb-title {
-      width: 17%;
-      top: 6300%;
-    }
-    .cate-quick-easy-title {
-      width: 22%;
-      top: 38%;
-    }
-    .cate-budget-friendly-title {
-      width: 30%;
-      top: 8330%;
-    }
-    .breakfasts-row-1,
-    .apps-sides-row-1,
-    .lunch-row-1,
-    .quick-easy-row-1  {
-      padding-top: 80px;
-    }
-    .dessert-row-1 {
-      padding-top: 3150px;
-    }  
-    .drinks-row-1 {
-      padding-top: 60px;
-    }
-    .snacks-row-1 {
-      padding-top: 2350px;
-    }
-    .salad-nav {
-      padding-top: 65px;
-    }
-    .low-carb-row-1 {
-      padding-top: 2550px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 3400px;
-    }
-
     .question-title {
       padding: 0 20px;
     }
@@ -1878,7 +1256,7 @@ body {
     }
     .sugar-compare-descriptions {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding-top: 10px;
     }  
 
@@ -1897,11 +1275,12 @@ body {
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 40px 0 0;
+      padding: 0 40px 60px 0;
       flex-wrap: nowrap;
     }
     .sugar-forms {
       font-size: 3rem;
+      top: 1%;
     }
     .sweetener-forms {
       padding-top: 2330px;
@@ -1913,67 +1292,17 @@ body {
 } 
 
 
-
 @media only screen and (max-width: 414px) {
     .nav-cate-course {
-      height: 800px;
+      height: 720px;
     }
     .cate-course-main {
-      padding-bottom: 250%;
+      padding-bottom: 220%;
     }
-    .meal-course-nav {
-      top: -18%;
-    }
-    .breakfasts-page-header,
-    .lunch-page-header,
-    .dinner-page-header,
-    .drinks-page-header,
-    .quick-easy-page-header {
-      top: -490%;
-    }
-    .apps-sides-page-header {
-      top: -470%;
-    }
-    .dessert-page-header {
-      top: 6080%;
-    }
-    .snacks-page-header {
-      top: 4450%;
-    }
-    .salad-page-header {
-      top: -320%;
-    }
-    .low-carb-page-header {
-      top: 4900%;
-    }
-    .budget-friendly-page-header {
-      top: 6800%;
-    }
-    .cate-dessert-title {
-      top: 6633%;
-    }
-    .cate-snacks-title {
-      top: 5000%;
-    }
-    .cate-low-carb-title {
-      width: 20%;
-      top: 5448%;
-    }
-    .cate-budget-friendly-title {
-      width: 32%;
-      top: 7355%;
-    }
-    .dessert-row-1 {
-      padding-top: 2700px;
-    }
-    .snacks-row-1 {
-      padding-top: 2050px;
-    }
-    .low-carb-row-1 {
-      padding-top: 2200px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 3000px;
+    .cate-course {
+      left: 7%;
+      top: -2%;
+      width: 35%;
     }
     .sugar-forms {
       line-height: 3rem;
@@ -1983,64 +1312,9 @@ body {
 }
 
 
-
 @media only screen and (max-width: 412px) {
     .cate-course-main {
-      padding-bottom: 250%;
-    }
-    .meal-course-nav {
-      top: -18%;
-    }
-    .breakfasts-page-header,
-    .lunch-page-header,
-    .dinner-page-header,
-    .drinks-page-header,
-    .quick-easy-page-header {
-      top: -490%;
-    }
-    .apps-sides-page-header {
-      top: -470%;
-    }
-    .dessert-page-header {
-      top: 6080%;
-    }
-    .snacks-page-header {
-      top: 4450%;
-    }
-    .salad-page-header {
-      top: -320%;
-    }
-    .low-carb-page-header {
-      top: 4900%;
-    }
-    .budget-friendly-page-header {
-      top: 6800%;
-    }
-    .cate-dessert-title {
-      top: 6610%;
-    }
-    .cate-snacks-title {
-      top: 5000%;
-    }
-    .cate-low-carb-title {
-      width: 20%;
-      top: 5430%;
-    }
-    .cate-budget-friendly-title {
-      width: 36%;
-      top: 7320%;
-    }
-    .dessert-row-1 {
-      padding-top: 2700px;
-    }
-    .snacks-row-1 {
-      padding-top: 2050px;
-    }
-    .low-carb-row-1 {
-      padding-top: 2200px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 3000px;
+      padding-bottom: 220%;
     }
     .sugar-forms {
       line-height: 3rem;
@@ -2054,43 +1328,13 @@ body {
 
 
 @media screen and (max-width: 400px) {
-    html {
-      width: 100%;
-      margin: 0 auto;
-    }
-/*    body {
-      width: 330px;
-    }*/
-/*    main {
-      height: 110%;
-    }*/
-/*    .top-section {
-      width: 100%;
-      position: relative;
-      margin: 0 auto;
-    }*/
-    .half-circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 25%;
-    }
-    .pic-plain-circle {
-      width: 75%;
-    }
-    .logo {
-      width: 50%;       
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
     .blurb {
       font-size: 1.2rem;
-      line-height: 1.5rem;
+      line-height: 1.8rem;
       text-align: center;
       width: 100%;
       position: absolute;
-      top: 85%;
+      top: 100%;
       bottom: 0;
       left: 0;
       right: 0;
@@ -2106,7 +1350,7 @@ body {
       padding-bottom: 5%;
     }
     .cate-course {
-      padding-top: 25%;
+      padding-top: 35%;
     }
     .cate-question-img {
       position: relative;
@@ -2121,17 +1365,11 @@ body {
     }
     /*meal course*/
     .cate-course-main {
-      padding-bottom: 1050px;
+      padding-bottom: 1820px;
     }
     .cate-headers {
       width: 75%;
     }
-    .meal-course-nav {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -10%;
-     } 
     .cate-wrap--top {
       margin-bottom: 15px;
     }
@@ -2146,109 +1384,6 @@ body {
     .group-1 {
       padding-top: 70px;
     }
-    .cate-course-main,
-    .breakfasts-main,
-    .apps-sides-main,
-    .dessert-main,
-    .snacks-main,
-    .low-carb-main,
-    .budget-friendly-main {
-      height: 100%;
-    }
-    .lunch-page-header, 
-    .breakfasts-page-header,  
-    .dinner-page-header,
-    .quick-easy-page-header {
-      top: -470%;
-    }
-    .apps-sides-page-header {
-      top: -445%;
-    }
-    .dessert-page-header {
-      top: 5540%;
-    }
-    .drinks-page-header {
-      top: -460%;
-    }
-    .snacks-page-header {
-      top: 3980%;
-    }
-    .salad-page-header {
-      top: -370%;
-    }
-    .low-carb-page-header {
-      top: 4620%;
-    }
-    .budget-friendly-page-header {
-      top: 6350%;
-    }
-    .cate-meal-course-title {
-      width: 28%;
-      top: 69%;
-    } 
-    .cate-breakfasts-title {
-      width: 45%;
-    } 
-    .cate-apps-sides-title {
-      width: 20%;
-      top: 30%;
-    }
-    .cate-dinner-title {
-      width: 40%;
-    }
-    .cate-dessert-title {
-      width: 45%;
-      top: 6050%;
-    }
-    .cate-drinks-title {
-      width: 40%;
-      top: 50%;
-    }
-    .cate-salad-title {
-      width: 40%;
-      top: 40%;
-    }
-    .cate-snacks-title {
-      width: 40%;
-      top: 4500%;
-    }
-    .cate-low-carb-title {
-      width: 20%;
-      top: 5110%;
-    }
-    .cate-quick-easy-title {
-      width: 22%;
-      top: 38%;
-    }
-    .cate-budget-friendly-title {
-      width: 35%;
-      top: 6850%;
-    }
-    .apps-sides-row-1 {
-      padding-top: 40px;
-    }
-    .dessert-row-1 {
-      padding-top: 2450px;
-    }  
-    .drinks-row-1 {
-      padding-top: 20px;
-    }
-    .snacks-row-1 {
-      padding-top: 1800px;
-    }
-    .salad-nav {
-      padding-top: 50px;
-    }
-    .low-carb-row-1 {
-      padding-top: 2100px;
-    }
-    .quick-easy-row-1 {
-      padding-top: 40px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 2780px;
-    }
-
     .question-title {
       padding: 0 20px;
     }
@@ -2312,11 +1447,11 @@ body {
     }
     .sugar-forms {
       font-size: 3rem;
+      top: 0;
     }
     .sweetener-forms {
       padding-top: 2330px;
       font-size: 2.5rem;
-      /*line-height: 3.5rem;*/
     }
 }    
 
@@ -2327,76 +1462,38 @@ body {
       margin: 0 auto;
     }
     .cate-course {
-      padding-top: 32%;
-    }
-    .meal-course-nav {
-      top: -9.5%;
+      padding-top: 44%;
     }
     .cate-course-main {
-      padding-bottom: 980px;
+      padding-bottom: 1800px;
     } 
-    .snacks-page-header {
-      top: 4010%;
+    .blurb {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding: 0 5%;
     }
-    .cate-snacks-title {
-      top: 4535%;
-    }
-    .low-carb-page-header {
-      top: 4350%;
-    }
-    .cate-low-carb-title {
-      top: 4835%;
-    }
-    .low-carb-row-1 {
-      padding-top: 1970px;
-    }
-    .quick-easy-page-header {
-      top: -435%;
-    }
-    .budget-friendly-page-header {
-      top: 5900%;
-    }
-    .cate-budget-friendly-title {
-      top: 6380%;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 2600px;
-    }
+    .sugar-equivalence-title {
+      padding: 0 40px;
+    }  
 }
 
 
 
 @media only screen and (max-width: 360px) {
-    html {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .half-circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 25%;
-    }
-    .pic-plain-circle {
+    .pic-logo-circle-half {
       width: 75%;
-    }
-    .logo {
-      width: 50%;       
-      position: absolute;
-      left: 0;
-      right: 0;
     }
     .blurb {
       font-size: 1.2rem;
-      line-height: 1.5rem;
+      line-height: 1.6rem;
       text-align: center;
       width: 100%;
       position: absolute;
-      top: 85%;
+      top: 90%;
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 15%;
+      padding: 0 10%;
     }
     .nav-cates {
       height: 100%;
@@ -2423,17 +1520,11 @@ body {
     }
     /*meal course*/
     .cate-course-main {
-      padding-bottom: 1050px;
+      padding-bottom: 1710px;
     }
     .cate-headers {
-      width: 75%;
+      width: 70%;
     }
-    .meal-course-nav {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -10%;
-     } 
     .cate-wrap--top {
       margin-bottom: 15px;
     }
@@ -2451,118 +1542,12 @@ body {
     .group-1 {
       padding-top: 70px;
     }
-    .cate-course-main,
-    .breakfasts-main,
-    .apps-sides-main,
-    .dessert-main,
-    .snacks-main,
-    .low-carb-main,
-    .budget-friendly-main {
-      height: 100%;
-    }
-    .lunch-page-header, 
-    .breakfasts-page-header,  
-    .dinner-page-header,
-    .quick-easy-page-header {
-      top: -420%;
-    }
-    .apps-sides-page-header {
-      top: -420%;
-    }
-    .dessert-page-header {
-      top: 5250%;
-    }
-    .drinks-page-header {
-      top: -430%;
-    }
-    .snacks-page-header {
-      top: 3950%;
-    }
-    .salad-page-header {
-      top: -345%;
-    }
-    .low-carb-page-header {
-      top: 4100%;
-    }
-    .budget-friendly-page-header {
-      top: 5750%;
-    }
-    .cate-meal-course-title {
-      width: 28%;
-      top: 69%;
-    } 
-    .cate-breakfasts-title {
-      width: 45%;
-    } 
-    .cate-apps-sides-title {
-      width: 20%;
-      top: 30%;
-    }
-    .cate-lunch-title {
-      width: 130px;
-    }   
-    .cate-dinner-title {
-      width: 40%;
-    }
-    .cate-dessert-title {
-      width: 40%;
-      top: 5750%;
-    }
-    .cate-drinks-title {
-      width: 40%;
-      top: 50%;
-    }
-    .cate-salad-title {
-      width: 40%;
-      top: 40%;
-    }
-    .cate-snacks-title {
-      width: 40%;
-      top: 4440%;
-    }
-    .cate-low-carb-title {
-      width: 20%;
-      top: 4570%;
-    }
-    .cate-quick-easy-title {
-      width: 22%;
-      top: 38%;
-    }
-    .cate-budget-friendly-title {
-      width: 35%;
-      top: 6220%;
-    }
-    .apps-sides-row-1 {
-      padding-top: 40px;
-    }
-    .dessert-row-1 {
-      padding-top: 2300px;
-    }  
-    .drinks-row-1 {
-      padding-top: 20px;
-    }
-    .snacks-row-1 {
-      padding-top: 1800px;
-    }
-    .salad-nav {
-      padding-top: 50px;
-    }
-    .low-carb-row-1 {
-      padding-top: 1850px;
-    }
-    .quick-easy-row-1 {
-      padding-top: 40px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 2520px;
-    }
-
     .question-title {
       padding: 0 20px;
     }
     .sugar-equivalence-title {
       font-size: 2rem;
-      padding: 0 15px;
+      padding: 0 35px;
       line-height: 2.5rem;
     }
     .sugar-compare {
@@ -2599,11 +1584,7 @@ body {
       font-size: 1.5rem;
       padding-top: 10px;
     }  
-
     .list {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
       font-size: 1.7rem;
       line-height: 1.3em;
       padding-left: 30px;
@@ -2614,7 +1595,7 @@ body {
     }
     .list-sweetener {
       top: 97%;
-      padding: 0 40px;
+      padding: 0 20px;
       flex-wrap: nowrap;
     }
     .sugar-forms {
@@ -2623,41 +1604,22 @@ body {
     .sweetener-forms {
       padding-top: 2330px;
       font-size: 2.5rem;
-      /*line-height: 3.5rem;*/
     }
 }  
 
 
 @media only screen and (max-width: 320px) {
     html {
-      width: 100%;
+      width: 111%;
       margin: 0 auto;
     }
-    .half-circle {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 38%;
-    }
-    .pic-plain-circle {
-      width: 75%;
-    }
-    .logo {
-      width: 50%;       
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
-    .logo-wrap {
-      top: 16px;
-    }
     .blurb {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
       text-align: center;
       width: 100%;
       position: absolute;
-      top: 85%;
+      top: 80%;
       bottom: 0;
       left: 0;
       right: 0;
@@ -2688,17 +1650,11 @@ body {
     }
     /*meal course*/
     .cate-course-main {
-      padding-bottom: 1050px;
+      padding-bottom: 1700px;
     }
     .cate-headers {
       width: 75%;
     }
-    .meal-course-nav {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -9.5%;
-     } 
     .cate-wrap--top {
       margin-bottom: 15px;
     }
@@ -2716,118 +1672,12 @@ body {
     .group-1 {
       padding-top: 70px;
     }
-    .cate-course-main,
-    .breakfasts-main,
-    .apps-sides-main,
-    .dessert-main,
-    .snacks-main,
-    .low-carb-main,
-    .budget-friendly-main {
-      height: 100%;
-    }
-    .lunch-page-header, 
-    .breakfasts-page-header,  
-    .dinner-page-header,
-    .quick-easy-page-header {
-      top: -370%;
-    }
-    .apps-sides-page-header {
-      top: -360%;
-    }
-    .dessert-page-header {
-      top: 4800%;
-    }
-    .drinks-page-header {
-      top: -385%;
-    }
-    .snacks-page-header {
-      top: 3520%;
-    }
-    .salad-page-header {
-      top: -310%;
-    }
-    .low-carb-page-header {
-      top: 3700%;
-    }
-    .budget-friendly-page-header {
-      top: 5200%;
-    }
-    .cate-meal-course-title {
-      width: 28%;
-      top: 69%;
-    } 
-    .cate-breakfasts-title {
-      width: 45%;
-    } 
-    .cate-apps-sides-title {
-      width: 20%;
-      top: 30%;
-    }
-    .cate-lunch-title {
-      width: 130px;
-    }   
-    .cate-dinner-title {
-      width: 40%;
-    }
-    .cate-dessert-title {
-      width: 45%;
-      top: 5220%;
-    }
-    .cate-drinks-title {
-      width: 40%;
-      top: 50%;
-    }
-    .cate-salad-title {
-      width: 40%;
-      top: 40%;
-    }
-    .cate-snacks-title {
-      width: 40%;
-      top: 3965%;
-    }
-    .cate-low-carb-title {
-      width: 20%;
-      top: 4110%;
-    }
-    .cate-quick-easy-title {
-      width: 22%;
-      top: 38%;
-    }
-    .cate-budget-friendly-title {
-      width: 35%;
-      top: 5610%;
-    }
-    .apps-sides-row-1 {
-      padding-top: 40px;
-    }
-    .dessert-row-1 {
-      padding-top: 2100px;
-    }  
-    .drinks-row-1 {
-      padding-top: 20px;
-    }
-    .snacks-row-1 {
-      padding-top: 1580px;
-    }
-    .salad-nav {
-      padding-top: 50px;
-    }
-    .low-carb-row-1 {
-      padding-top: 1700px;
-    }
-    .quick-easy-row-1 {
-      padding-top: 40px;
-    }
-    .budget-friendly-row-1 {
-      padding-top: 2270px;
-    }
-
     .question-title {
-      padding: 0 20px;
+      padding: 0 40px;
     }
     .sugar-equivalence-title {
       font-size: 2rem;
-      padding: 0 15px;
+      padding: 0 40px;
       line-height: 2.5rem;
     }
     .sugar-compare {
@@ -2861,17 +1711,13 @@ body {
     }
     .sugar-compare-descriptions {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       padding-top: 10px;
     }  
-
     .list {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
       font-size: 1.7rem;
       line-height: 1.3em;
-      padding-left: 30px;
+      padding-left: 15px;
       padding-bottom: 0;
       width: 90%;
       top: 5%;
@@ -2887,9 +1733,8 @@ body {
       font-size: 3rem;
     }
     .sweetener-forms {
-      padding-top: 2400px;
+      padding-top: 2310px;
       font-size: 2.5rem;
-      /*line-height: 3.5rem;*/
     }
 }    
 
