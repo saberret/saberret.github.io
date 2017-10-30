@@ -1,8 +1,14 @@
 @font-face {
   font-family: 'Asparagus Sprouts';
-  src: url('../fonts/Asparagus Sprouts.ttf') format('truetype');
+  src: url('../fonts/Asparagus Sprouts.ttf') format('truetype');       
+}
+
+@font-face {
   font-family: 'CatCafe';
-  src: url('../fonts/CatCafe.ttf') format('truetype');  
+  src: url('../fonts/CatCafe.ttf') format('truetype');         
+}
+
+@font-face {  
   font-family: 'coquerli-regular';
   src: url('../fonts/coquerli-regular.ttf') format('truetype');        
 }
